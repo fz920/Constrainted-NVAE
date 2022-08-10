@@ -1,8 +1,8 @@
 #!/bin/bash
-export EXPR_ID=5
+export EXPR_ID=6
 export DATA_DIR=/data/users/fz920/data
 export CHECKPOINT_DIR=/data/users/fz920/NVAE/checkpoint
-export CODE_DIR=/data/users/fz920/NVAE
+export CODE_DIR=/data/users/fz920/Constrained-NVAE
 cd $CODE_DIR
 CUDA_VISIBLE_DEVICES=1 python train.py --data $DATA_DIR/cifar10 --root $CHECKPOINT_DIR --save $EXPR_ID --dataset cifar10 \
         --num_channels_enc 64 --num_channels_dec 64 --epochs 100 --num_postprocess_cells 2 --num_preprocess_cells 2 \
