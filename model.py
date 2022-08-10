@@ -397,7 +397,29 @@ class AutoEncoder(nn.Module):
                     # form encoder
                     ftr = combiner_cells_enc[idx_dec - 1](combiner_cells_s[idx_dec - 1], s)
                     param = self.enc_sampler[idx_dec](ftr)
-                    mu_q, log_sig_q = torch.chunk(param, 2, dim=1)
+                    mu_q1, log_sig_q1 = torch.chunk(param, 2, dim=1)
+
+                    # Constrained algorithm
+                    C = 0.5
+
+                    alpha = (mu_q1-mu_p)/torch.exp(log_sig_p)
+                    gamma = 2 * (log_sig_q1-log_sig_p)
+
+                    torch.clamp_(gamma, min=torch.tensor(0.001)) # Make sure that gamma is non-negative
+
+                    l2_alpha = torch.mean(torch.sum(alpha**2, dim=1))   # Compute l2 of alpha
+                    l1_gamma = torch.mean(torch.sum(torch.abs(gamma), dim=1)) # Compute l1 of gamma
+                    c_alpha = torch.min(torch.tensor(1), torch.sqrt(2*C/l2_alpha))
+                    
+                    alpha_bound = torch.sqrt(2*C/l2_alpha)
+                    gamma_bound = (2*C-c_alpha**2*l2_alpha)/l1_gamma
+
+                    alpha1 = torch.clamp(alpha, max=alpha_bound, min=-alpha_bound)  # Clip alpha(x)
+                    gamma1 = torch.clamp(gamma, max=gamma_bound, min=-gamma_bound) # Clip gamma(x)
+                    
+                    mu_q = alpha1 + mu_p
+                    log_sig_q = log_sig_p + gamma1 / 2
+
                     dist = Normal(mu_p + mu_q, log_sig_p + log_sig_q) if self.res_dist else Normal(mu_q, log_sig_q)
                     z, _ = dist.sample()
                     log_q_conv = dist.log_p(z)
