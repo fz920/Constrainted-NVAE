@@ -405,11 +405,11 @@ class AutoEncoder(nn.Module):
                     alpha = (mu_q1-mu_p)/torch.exp(log_sig_p)
                     gamma = 2 * (log_sig_q1-log_sig_p)
 
-                    torch.clamp_(gamma, min=torch.tensor(0.001)) # Make sure that gamma is non-negative
+                    torch.clamp_(gamma, min=torch.tensor(0.001).cuda()) # Make sure that gamma is non-negative
 
                     l2_alpha = torch.mean(torch.sum(alpha**2, dim=1))   # Compute l2 of alpha
                     l1_gamma = torch.mean(torch.sum(torch.abs(gamma), dim=1)) # Compute l1 of gamma
-                    c_alpha = torch.min(torch.tensor(1), torch.sqrt(2*C/l2_alpha))
+                    c_alpha = torch.min(torch.tensor(1).cuda(), torch.sqrt(2*C/l2_alpha))
                     
                     alpha_bound = torch.sqrt(2*C/l2_alpha)
                     gamma_bound = (2*C-c_alpha**2*l2_alpha)/l1_gamma
