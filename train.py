@@ -92,7 +92,7 @@ def main(args):
         logging.info('epoch %d', epoch)
 
         # Training.
-        train_nelbo, global_step = train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_iters, writer, logging)
+        train_nelbo, global_step, kl_vals = train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_iters, writer, logging)
         logging.info('train_nelbo %f', train_nelbo)
         writer.add_scalar('train/nelbo', train_nelbo, global_step)
 
@@ -115,6 +115,10 @@ def main(args):
             logging.info('valid neg log p %f', valid_neg_log_p)
             logging.info('valid bpd elbo %f', valid_nelbo * bpd_coeff)
             logging.info('valid bpd log p %f', valid_neg_log_p * bpd_coeff)
+
+            # Add logging information for the KL distance
+            logging.info('KL distance %f', kl_vals)
+
             writer.add_scalar('val/neg_log_p', valid_neg_log_p, epoch)
             writer.add_scalar('val/nelbo', valid_nelbo, epoch)
             writer.add_scalar('val/bpd_log_p', valid_neg_log_p * bpd_coeff, epoch)
@@ -233,7 +237,7 @@ def train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_it
         global_step += 1
 
     utils.average_tensor(nelbo.avg, args.distributed)
-    return nelbo.avg, global_step
+    return nelbo.avg, global_step, kl_vals
 
 
 def test(valid_queue, model, num_samples, args, logging):
