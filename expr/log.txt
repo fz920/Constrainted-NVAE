@@ -1,0 +1,1006 @@
+2022-08-15 21:09:24,174 (Elapsed: 00:00:00) loading the model at:
+2022-08-15 21:09:24,174 (Elapsed: 00:00:00) /data/users/fz920/Constrainted-NVAE/checkpoint/eval-11/checkpoint.pt
+2022-08-15 21:09:24,545 (Elapsed: 00:00:00) loaded the model at epoch 9
+2022-08-15 21:09:30,319 (Elapsed: 00:00:06) args = Namespace(ada_groups=False, arch_instance='res_mbconv', batch_size=32, cont_training=True, data='/data/users/fz920/data/cifar10', dataset='cifar10', distributed=True, epochs=10, fast_adamax=True, global_rank=0, kl_anneal_portion=0.3, kl_const_coeff=0.0001, kl_const_portion=0.0001, learning_rate=0.0001, learning_rate_min=0.0001, local_rank=0, master_address='127.0.0.1', min_groups_per_scale=1, node_rank=0, num_cell_per_cond_dec=2, num_cell_per_cond_enc=2, num_channels_dec=64, num_channels_enc=64, num_groups_per_scale=30, num_latent_per_group=20, num_latent_scales=1, num_mixture_dec=10, num_nf=1, num_postprocess_blocks=1, num_postprocess_cells=2, num_preprocess_blocks=1, num_preprocess_cells=2, num_proc_node=1, num_process_per_node=1, num_total_iter=15620, num_x_bits=8, res_dist=True, root='/data/users/fz920/Constrainted-NVAE/checkpoint', save='/data/users/fz920/Constrainted-NVAE/checkpoint/eval-11', seed=1, use_se=True, warmup_epochs=5, weight_decay=0.0003, weight_decay_norm=0.1, weight_decay_norm_anneal=False, weight_decay_norm_init=10.0)
+2022-08-15 21:09:30,320 (Elapsed: 00:00:06) num conv layers: 610
+2022-08-15 21:09:30,353 (Elapsed: 00:00:06) param size = 35.511228M 
+2022-08-15 21:10:06,927 (Elapsed: 00:00:42) sampling time per batch: 0.224 sec
+2022-08-15 21:10:07,010 (Elapsed: 00:00:42) Saved at: /data/users/fz920/expr/gpu_0_samples_0.npz
+2022-08-15 21:10:07,222 (Elapsed: 00:00:43) sampling time per batch: 0.212 sec
+2022-08-15 21:10:07,304 (Elapsed: 00:00:43) Saved at: /data/users/fz920/expr/gpu_0_samples_1.npz
+2022-08-15 21:10:07,516 (Elapsed: 00:00:43) sampling time per batch: 0.211 sec
+2022-08-15 21:10:07,598 (Elapsed: 00:00:43) Saved at: /data/users/fz920/expr/gpu_0_samples_2.npz
+2022-08-15 21:10:07,809 (Elapsed: 00:00:43) sampling time per batch: 0.211 sec
+2022-08-15 21:10:07,892 (Elapsed: 00:00:43) Saved at: /data/users/fz920/expr/gpu_0_samples_3.npz
+2022-08-15 21:10:08,103 (Elapsed: 00:00:43) sampling time per batch: 0.211 sec
+2022-08-15 21:10:08,220 (Elapsed: 00:00:44) Saved at: /data/users/fz920/expr/gpu_0_samples_4.npz
+2022-08-15 21:10:08,432 (Elapsed: 00:00:44) sampling time per batch: 0.211 sec
+2022-08-15 21:10:08,514 (Elapsed: 00:00:44) Saved at: /data/users/fz920/expr/gpu_0_samples_5.npz
+2022-08-15 21:10:08,726 (Elapsed: 00:00:44) sampling time per batch: 0.211 sec
+2022-08-15 21:10:08,809 (Elapsed: 00:00:44) Saved at: /data/users/fz920/expr/gpu_0_samples_6.npz
+2022-08-15 21:10:09,021 (Elapsed: 00:00:44) sampling time per batch: 0.212 sec
+2022-08-15 21:10:09,104 (Elapsed: 00:00:44) Saved at: /data/users/fz920/expr/gpu_0_samples_7.npz
+2022-08-15 21:10:09,315 (Elapsed: 00:00:45) sampling time per batch: 0.211 sec
+2022-08-15 21:10:09,397 (Elapsed: 00:00:45) Saved at: /data/users/fz920/expr/gpu_0_samples_8.npz
+2022-08-15 21:10:09,609 (Elapsed: 00:00:45) sampling time per batch: 0.212 sec
+2022-08-15 21:10:09,692 (Elapsed: 00:00:45) Saved at: /data/users/fz920/expr/gpu_0_samples_9.npz
+2022-08-15 21:10:09,903 (Elapsed: 00:00:45) sampling time per batch: 0.212 sec
+2022-08-15 21:10:09,985 (Elapsed: 00:00:45) Saved at: /data/users/fz920/expr/gpu_0_samples_10.npz
+2022-08-15 21:10:10,197 (Elapsed: 00:00:46) sampling time per batch: 0.212 sec
+2022-08-15 21:10:10,279 (Elapsed: 00:00:46) Saved at: /data/users/fz920/expr/gpu_0_samples_11.npz
+2022-08-15 21:10:10,491 (Elapsed: 00:00:46) sampling time per batch: 0.212 sec
+2022-08-15 21:10:10,574 (Elapsed: 00:00:46) Saved at: /data/users/fz920/expr/gpu_0_samples_12.npz
+2022-08-15 21:10:10,786 (Elapsed: 00:00:46) sampling time per batch: 0.212 sec
+2022-08-15 21:10:10,868 (Elapsed: 00:00:46) Saved at: /data/users/fz920/expr/gpu_0_samples_13.npz
+2022-08-15 21:10:11,080 (Elapsed: 00:00:46) sampling time per batch: 0.212 sec
+2022-08-15 21:10:11,162 (Elapsed: 00:00:46) Saved at: /data/users/fz920/expr/gpu_0_samples_14.npz
+2022-08-15 21:10:11,374 (Elapsed: 00:00:47) sampling time per batch: 0.212 sec
+2022-08-15 21:10:11,457 (Elapsed: 00:00:47) Saved at: /data/users/fz920/expr/gpu_0_samples_15.npz
+2022-08-15 21:10:11,669 (Elapsed: 00:00:47) sampling time per batch: 0.212 sec
+2022-08-15 21:10:11,751 (Elapsed: 00:00:47) Saved at: /data/users/fz920/expr/gpu_0_samples_16.npz
+2022-08-15 21:10:11,962 (Elapsed: 00:00:47) sampling time per batch: 0.211 sec
+2022-08-15 21:10:12,045 (Elapsed: 00:00:47) Saved at: /data/users/fz920/expr/gpu_0_samples_17.npz
+2022-08-15 21:10:12,257 (Elapsed: 00:00:48) sampling time per batch: 0.211 sec
+2022-08-15 21:10:12,339 (Elapsed: 00:00:48) Saved at: /data/users/fz920/expr/gpu_0_samples_18.npz
+2022-08-15 21:10:12,551 (Elapsed: 00:00:48) sampling time per batch: 0.212 sec
+2022-08-15 21:10:12,633 (Elapsed: 00:00:48) Saved at: /data/users/fz920/expr/gpu_0_samples_19.npz
+2022-08-15 21:10:12,845 (Elapsed: 00:00:48) sampling time per batch: 0.212 sec
+2022-08-15 21:10:12,927 (Elapsed: 00:00:48) Saved at: /data/users/fz920/expr/gpu_0_samples_20.npz
+2022-08-15 21:10:13,139 (Elapsed: 00:00:48) sampling time per batch: 0.212 sec
+2022-08-15 21:10:13,266 (Elapsed: 00:00:49) Saved at: /data/users/fz920/expr/gpu_0_samples_21.npz
+2022-08-15 21:10:13,479 (Elapsed: 00:00:49) sampling time per batch: 0.212 sec
+2022-08-15 21:10:13,561 (Elapsed: 00:00:49) Saved at: /data/users/fz920/expr/gpu_0_samples_22.npz
+2022-08-15 21:10:13,773 (Elapsed: 00:00:49) sampling time per batch: 0.212 sec
+2022-08-15 21:10:13,855 (Elapsed: 00:00:49) Saved at: /data/users/fz920/expr/gpu_0_samples_23.npz
+2022-08-15 21:10:14,067 (Elapsed: 00:00:49) sampling time per batch: 0.213 sec
+2022-08-15 21:10:14,149 (Elapsed: 00:00:49) Saved at: /data/users/fz920/expr/gpu_0_samples_24.npz
+2022-08-15 21:10:14,361 (Elapsed: 00:00:50) sampling time per batch: 0.212 sec
+2022-08-15 21:10:14,443 (Elapsed: 00:00:50) Saved at: /data/users/fz920/expr/gpu_0_samples_25.npz
+2022-08-15 21:10:14,659 (Elapsed: 00:00:50) sampling time per batch: 0.215 sec
+2022-08-15 21:10:14,741 (Elapsed: 00:00:50) Saved at: /data/users/fz920/expr/gpu_0_samples_26.npz
+2022-08-15 21:10:14,953 (Elapsed: 00:00:50) sampling time per batch: 0.212 sec
+2022-08-15 21:10:15,035 (Elapsed: 00:00:50) Saved at: /data/users/fz920/expr/gpu_0_samples_27.npz
+2022-08-15 21:10:15,247 (Elapsed: 00:00:51) sampling time per batch: 0.212 sec
+2022-08-15 21:10:15,330 (Elapsed: 00:00:51) Saved at: /data/users/fz920/expr/gpu_0_samples_28.npz
+2022-08-15 21:10:15,542 (Elapsed: 00:00:51) sampling time per batch: 0.212 sec
+2022-08-15 21:10:15,624 (Elapsed: 00:00:51) Saved at: /data/users/fz920/expr/gpu_0_samples_29.npz
+2022-08-15 21:10:15,835 (Elapsed: 00:00:51) sampling time per batch: 0.211 sec
+2022-08-15 21:10:15,918 (Elapsed: 00:00:51) Saved at: /data/users/fz920/expr/gpu_0_samples_30.npz
+2022-08-15 21:10:16,130 (Elapsed: 00:00:51) sampling time per batch: 0.212 sec
+2022-08-15 21:10:16,212 (Elapsed: 00:00:52) Saved at: /data/users/fz920/expr/gpu_0_samples_31.npz
+2022-08-15 21:10:16,424 (Elapsed: 00:00:52) sampling time per batch: 0.211 sec
+2022-08-15 21:10:16,506 (Elapsed: 00:00:52) Saved at: /data/users/fz920/expr/gpu_0_samples_32.npz
+2022-08-15 21:10:16,719 (Elapsed: 00:00:52) sampling time per batch: 0.212 sec
+2022-08-15 21:10:16,801 (Elapsed: 00:00:52) Saved at: /data/users/fz920/expr/gpu_0_samples_33.npz
+2022-08-15 21:10:17,013 (Elapsed: 00:00:52) sampling time per batch: 0.212 sec
+2022-08-15 21:10:17,096 (Elapsed: 00:00:52) Saved at: /data/users/fz920/expr/gpu_0_samples_34.npz
+2022-08-15 21:10:17,308 (Elapsed: 00:00:53) sampling time per batch: 0.212 sec
+2022-08-15 21:10:17,390 (Elapsed: 00:00:53) Saved at: /data/users/fz920/expr/gpu_0_samples_35.npz
+2022-08-15 21:10:17,602 (Elapsed: 00:00:53) sampling time per batch: 0.211 sec
+2022-08-15 21:10:17,683 (Elapsed: 00:00:53) Saved at: /data/users/fz920/expr/gpu_0_samples_36.npz
+2022-08-15 21:10:17,895 (Elapsed: 00:00:53) sampling time per batch: 0.212 sec
+2022-08-15 21:10:17,973 (Elapsed: 00:00:53) Saved at: /data/users/fz920/expr/gpu_0_samples_37.npz
+2022-08-15 21:10:18,185 (Elapsed: 00:00:54) sampling time per batch: 0.211 sec
+2022-08-15 21:10:18,305 (Elapsed: 00:00:54) Saved at: /data/users/fz920/expr/gpu_0_samples_38.npz
+2022-08-15 21:10:18,517 (Elapsed: 00:00:54) sampling time per batch: 0.211 sec
+2022-08-15 21:10:18,598 (Elapsed: 00:00:54) Saved at: /data/users/fz920/expr/gpu_0_samples_39.npz
+2022-08-15 21:10:18,810 (Elapsed: 00:00:54) sampling time per batch: 0.212 sec
+2022-08-15 21:10:18,889 (Elapsed: 00:00:54) Saved at: /data/users/fz920/expr/gpu_0_samples_40.npz
+2022-08-15 21:10:19,100 (Elapsed: 00:00:54) sampling time per batch: 0.211 sec
+2022-08-15 21:10:19,179 (Elapsed: 00:00:55) Saved at: /data/users/fz920/expr/gpu_0_samples_41.npz
+2022-08-15 21:10:19,391 (Elapsed: 00:00:55) sampling time per batch: 0.212 sec
+2022-08-15 21:10:19,471 (Elapsed: 00:00:55) Saved at: /data/users/fz920/expr/gpu_0_samples_42.npz
+2022-08-15 21:10:19,683 (Elapsed: 00:00:55) sampling time per batch: 0.212 sec
+2022-08-15 21:10:19,764 (Elapsed: 00:00:55) Saved at: /data/users/fz920/expr/gpu_0_samples_43.npz
+2022-08-15 21:10:19,976 (Elapsed: 00:00:55) sampling time per batch: 0.211 sec
+2022-08-15 21:10:20,055 (Elapsed: 00:00:55) Saved at: /data/users/fz920/expr/gpu_0_samples_44.npz
+2022-08-15 21:10:20,266 (Elapsed: 00:00:56) sampling time per batch: 0.211 sec
+2022-08-15 21:10:20,344 (Elapsed: 00:00:56) Saved at: /data/users/fz920/expr/gpu_0_samples_45.npz
+2022-08-15 21:10:20,556 (Elapsed: 00:00:56) sampling time per batch: 0.211 sec
+2022-08-15 21:10:20,636 (Elapsed: 00:00:56) Saved at: /data/users/fz920/expr/gpu_0_samples_46.npz
+2022-08-15 21:10:20,847 (Elapsed: 00:00:56) sampling time per batch: 0.211 sec
+2022-08-15 21:10:20,926 (Elapsed: 00:00:56) Saved at: /data/users/fz920/expr/gpu_0_samples_47.npz
+2022-08-15 21:10:21,137 (Elapsed: 00:00:56) sampling time per batch: 0.211 sec
+2022-08-15 21:10:21,217 (Elapsed: 00:00:57) Saved at: /data/users/fz920/expr/gpu_0_samples_48.npz
+2022-08-15 21:10:21,428 (Elapsed: 00:00:57) sampling time per batch: 0.211 sec
+2022-08-15 21:10:21,509 (Elapsed: 00:00:57) Saved at: /data/users/fz920/expr/gpu_0_samples_49.npz
+2022-08-15 21:10:21,720 (Elapsed: 00:00:57) sampling time per batch: 0.211 sec
+2022-08-15 21:10:21,800 (Elapsed: 00:00:57) Saved at: /data/users/fz920/expr/gpu_0_samples_50.npz
+2022-08-15 21:10:22,012 (Elapsed: 00:00:57) sampling time per batch: 0.212 sec
+2022-08-15 21:10:22,091 (Elapsed: 00:00:57) Saved at: /data/users/fz920/expr/gpu_0_samples_51.npz
+2022-08-15 21:10:22,303 (Elapsed: 00:00:58) sampling time per batch: 0.211 sec
+2022-08-15 21:10:22,382 (Elapsed: 00:00:58) Saved at: /data/users/fz920/expr/gpu_0_samples_52.npz
+2022-08-15 21:10:22,593 (Elapsed: 00:00:58) sampling time per batch: 0.211 sec
+2022-08-15 21:10:22,672 (Elapsed: 00:00:58) Saved at: /data/users/fz920/expr/gpu_0_samples_53.npz
+2022-08-15 21:10:22,884 (Elapsed: 00:00:58) sampling time per batch: 0.211 sec
+2022-08-15 21:10:22,962 (Elapsed: 00:00:58) Saved at: /data/users/fz920/expr/gpu_0_samples_54.npz
+2022-08-15 21:10:23,174 (Elapsed: 00:00:58) sampling time per batch: 0.211 sec
+2022-08-15 21:10:23,254 (Elapsed: 00:00:59) Saved at: /data/users/fz920/expr/gpu_0_samples_55.npz
+2022-08-15 21:10:23,507 (Elapsed: 00:00:59) sampling time per batch: 0.211 sec
+2022-08-15 21:10:23,586 (Elapsed: 00:00:59) Saved at: /data/users/fz920/expr/gpu_0_samples_56.npz
+2022-08-15 21:10:23,798 (Elapsed: 00:00:59) sampling time per batch: 0.212 sec
+2022-08-15 21:10:23,878 (Elapsed: 00:00:59) Saved at: /data/users/fz920/expr/gpu_0_samples_57.npz
+2022-08-15 21:10:24,090 (Elapsed: 00:00:59) sampling time per batch: 0.212 sec
+2022-08-15 21:10:24,169 (Elapsed: 00:00:59) Saved at: /data/users/fz920/expr/gpu_0_samples_58.npz
+2022-08-15 21:10:24,381 (Elapsed: 00:01:00) sampling time per batch: 0.211 sec
+2022-08-15 21:10:24,461 (Elapsed: 00:01:00) Saved at: /data/users/fz920/expr/gpu_0_samples_59.npz
+2022-08-15 21:10:24,673 (Elapsed: 00:01:00) sampling time per batch: 0.212 sec
+2022-08-15 21:10:24,751 (Elapsed: 00:01:00) Saved at: /data/users/fz920/expr/gpu_0_samples_60.npz
+2022-08-15 21:10:24,964 (Elapsed: 00:01:00) sampling time per batch: 0.213 sec
+2022-08-15 21:10:25,044 (Elapsed: 00:01:00) Saved at: /data/users/fz920/expr/gpu_0_samples_61.npz
+2022-08-15 21:10:25,256 (Elapsed: 00:01:01) sampling time per batch: 0.212 sec
+2022-08-15 21:10:25,334 (Elapsed: 00:01:01) Saved at: /data/users/fz920/expr/gpu_0_samples_62.npz
+2022-08-15 21:10:25,546 (Elapsed: 00:01:01) sampling time per batch: 0.212 sec
+2022-08-15 21:10:25,625 (Elapsed: 00:01:01) Saved at: /data/users/fz920/expr/gpu_0_samples_63.npz
+2022-08-15 21:10:25,837 (Elapsed: 00:01:01) sampling time per batch: 0.212 sec
+2022-08-15 21:10:25,915 (Elapsed: 00:01:01) Saved at: /data/users/fz920/expr/gpu_0_samples_64.npz
+2022-08-15 21:10:26,127 (Elapsed: 00:01:01) sampling time per batch: 0.211 sec
+2022-08-15 21:10:26,205 (Elapsed: 00:01:02) Saved at: /data/users/fz920/expr/gpu_0_samples_65.npz
+2022-08-15 21:10:26,417 (Elapsed: 00:01:02) sampling time per batch: 0.212 sec
+2022-08-15 21:10:26,497 (Elapsed: 00:01:02) Saved at: /data/users/fz920/expr/gpu_0_samples_66.npz
+2022-08-15 21:10:26,709 (Elapsed: 00:01:02) sampling time per batch: 0.212 sec
+2022-08-15 21:10:26,788 (Elapsed: 00:01:02) Saved at: /data/users/fz920/expr/gpu_0_samples_67.npz
+2022-08-15 21:10:27,000 (Elapsed: 00:01:02) sampling time per batch: 0.212 sec
+2022-08-15 21:10:27,079 (Elapsed: 00:01:02) Saved at: /data/users/fz920/expr/gpu_0_samples_68.npz
+2022-08-15 21:10:27,290 (Elapsed: 00:01:03) sampling time per batch: 0.212 sec
+2022-08-15 21:10:27,369 (Elapsed: 00:01:03) Saved at: /data/users/fz920/expr/gpu_0_samples_69.npz
+2022-08-15 21:10:27,580 (Elapsed: 00:01:03) sampling time per batch: 0.212 sec
+2022-08-15 21:10:27,660 (Elapsed: 00:01:03) Saved at: /data/users/fz920/expr/gpu_0_samples_70.npz
+2022-08-15 21:10:27,871 (Elapsed: 00:01:03) sampling time per batch: 0.211 sec
+2022-08-15 21:10:27,949 (Elapsed: 00:01:03) Saved at: /data/users/fz920/expr/gpu_0_samples_71.npz
+2022-08-15 21:10:28,161 (Elapsed: 00:01:03) sampling time per batch: 0.212 sec
+2022-08-15 21:10:28,240 (Elapsed: 00:01:04) Saved at: /data/users/fz920/expr/gpu_0_samples_72.npz
+2022-08-15 21:10:28,452 (Elapsed: 00:01:04) sampling time per batch: 0.212 sec
+2022-08-15 21:10:28,579 (Elapsed: 00:01:04) Saved at: /data/users/fz920/expr/gpu_0_samples_73.npz
+2022-08-15 21:10:28,791 (Elapsed: 00:01:04) sampling time per batch: 0.211 sec
+2022-08-15 21:10:28,870 (Elapsed: 00:01:04) Saved at: /data/users/fz920/expr/gpu_0_samples_74.npz
+2022-08-15 21:10:29,082 (Elapsed: 00:01:04) sampling time per batch: 0.211 sec
+2022-08-15 21:10:29,160 (Elapsed: 00:01:04) Saved at: /data/users/fz920/expr/gpu_0_samples_75.npz
+2022-08-15 21:10:29,372 (Elapsed: 00:01:05) sampling time per batch: 0.212 sec
+2022-08-15 21:10:29,451 (Elapsed: 00:01:05) Saved at: /data/users/fz920/expr/gpu_0_samples_76.npz
+2022-08-15 21:10:29,663 (Elapsed: 00:01:05) sampling time per batch: 0.212 sec
+2022-08-15 21:10:29,742 (Elapsed: 00:01:05) Saved at: /data/users/fz920/expr/gpu_0_samples_77.npz
+2022-08-15 21:10:29,954 (Elapsed: 00:01:05) sampling time per batch: 0.212 sec
+2022-08-15 21:10:30,032 (Elapsed: 00:01:05) Saved at: /data/users/fz920/expr/gpu_0_samples_78.npz
+2022-08-15 21:10:30,252 (Elapsed: 00:01:06) sampling time per batch: 0.220 sec
+2022-08-15 21:10:30,344 (Elapsed: 00:01:06) Saved at: /data/users/fz920/expr/gpu_0_samples_79.npz
+2022-08-15 21:10:30,577 (Elapsed: 00:01:06) sampling time per batch: 0.233 sec
+2022-08-15 21:10:30,657 (Elapsed: 00:01:06) Saved at: /data/users/fz920/expr/gpu_0_samples_80.npz
+2022-08-15 21:10:30,870 (Elapsed: 00:01:06) sampling time per batch: 0.213 sec
+2022-08-15 21:10:30,947 (Elapsed: 00:01:06) Saved at: /data/users/fz920/expr/gpu_0_samples_81.npz
+2022-08-15 21:10:31,160 (Elapsed: 00:01:06) sampling time per batch: 0.213 sec
+2022-08-15 21:10:31,238 (Elapsed: 00:01:07) Saved at: /data/users/fz920/expr/gpu_0_samples_82.npz
+2022-08-15 21:10:31,450 (Elapsed: 00:01:07) sampling time per batch: 0.212 sec
+2022-08-15 21:10:31,528 (Elapsed: 00:01:07) Saved at: /data/users/fz920/expr/gpu_0_samples_83.npz
+2022-08-15 21:10:31,741 (Elapsed: 00:01:07) sampling time per batch: 0.213 sec
+2022-08-15 21:10:31,819 (Elapsed: 00:01:07) Saved at: /data/users/fz920/expr/gpu_0_samples_84.npz
+2022-08-15 21:10:32,032 (Elapsed: 00:01:07) sampling time per batch: 0.213 sec
+2022-08-15 21:10:32,109 (Elapsed: 00:01:07) Saved at: /data/users/fz920/expr/gpu_0_samples_85.npz
+2022-08-15 21:10:32,322 (Elapsed: 00:01:08) sampling time per batch: 0.212 sec
+2022-08-15 21:10:32,401 (Elapsed: 00:01:08) Saved at: /data/users/fz920/expr/gpu_0_samples_86.npz
+2022-08-15 21:10:32,614 (Elapsed: 00:01:08) sampling time per batch: 0.213 sec
+2022-08-15 21:10:32,693 (Elapsed: 00:01:08) Saved at: /data/users/fz920/expr/gpu_0_samples_87.npz
+2022-08-15 21:10:32,906 (Elapsed: 00:01:08) sampling time per batch: 0.213 sec
+2022-08-15 21:10:32,984 (Elapsed: 00:01:08) Saved at: /data/users/fz920/expr/gpu_0_samples_88.npz
+2022-08-15 21:10:33,197 (Elapsed: 00:01:09) sampling time per batch: 0.213 sec
+2022-08-15 21:10:33,276 (Elapsed: 00:01:09) Saved at: /data/users/fz920/expr/gpu_0_samples_89.npz
+2022-08-15 21:10:33,488 (Elapsed: 00:01:09) sampling time per batch: 0.212 sec
+2022-08-15 21:10:33,567 (Elapsed: 00:01:09) Saved at: /data/users/fz920/expr/gpu_0_samples_90.npz
+2022-08-15 21:10:33,779 (Elapsed: 00:01:09) sampling time per batch: 0.212 sec
+2022-08-15 21:10:33,857 (Elapsed: 00:01:09) Saved at: /data/users/fz920/expr/gpu_0_samples_91.npz
+2022-08-15 21:10:34,070 (Elapsed: 00:01:09) sampling time per batch: 0.212 sec
+2022-08-15 21:10:34,148 (Elapsed: 00:01:09) Saved at: /data/users/fz920/expr/gpu_0_samples_92.npz
+2022-08-15 21:10:34,361 (Elapsed: 00:01:10) sampling time per batch: 0.213 sec
+2022-08-15 21:10:34,442 (Elapsed: 00:01:10) Saved at: /data/users/fz920/expr/gpu_0_samples_93.npz
+2022-08-15 21:10:34,655 (Elapsed: 00:01:10) sampling time per batch: 0.213 sec
+2022-08-15 21:10:34,733 (Elapsed: 00:01:10) Saved at: /data/users/fz920/expr/gpu_0_samples_94.npz
+2022-08-15 21:10:34,946 (Elapsed: 00:01:10) sampling time per batch: 0.213 sec
+2022-08-15 21:10:35,024 (Elapsed: 00:01:10) Saved at: /data/users/fz920/expr/gpu_0_samples_95.npz
+2022-08-15 21:10:35,236 (Elapsed: 00:01:11) sampling time per batch: 0.213 sec
+2022-08-15 21:10:35,315 (Elapsed: 00:01:11) Saved at: /data/users/fz920/expr/gpu_0_samples_96.npz
+2022-08-15 21:10:35,528 (Elapsed: 00:01:11) sampling time per batch: 0.213 sec
+2022-08-15 21:10:35,605 (Elapsed: 00:01:11) Saved at: /data/users/fz920/expr/gpu_0_samples_97.npz
+2022-08-15 21:10:35,818 (Elapsed: 00:01:11) sampling time per batch: 0.213 sec
+2022-08-15 21:10:35,895 (Elapsed: 00:01:11) Saved at: /data/users/fz920/expr/gpu_0_samples_98.npz
+2022-08-15 21:10:36,108 (Elapsed: 00:01:11) sampling time per batch: 0.213 sec
+2022-08-15 21:10:36,186 (Elapsed: 00:01:12) Saved at: /data/users/fz920/expr/gpu_0_samples_99.npz
+2022-08-15 21:10:36,399 (Elapsed: 00:01:12) sampling time per batch: 0.213 sec
+2022-08-15 21:10:36,480 (Elapsed: 00:01:12) Saved at: /data/users/fz920/expr/gpu_0_samples_100.npz
+2022-08-15 21:10:36,694 (Elapsed: 00:01:12) sampling time per batch: 0.213 sec
+2022-08-15 21:10:36,773 (Elapsed: 00:01:12) Saved at: /data/users/fz920/expr/gpu_0_samples_101.npz
+2022-08-15 21:10:36,986 (Elapsed: 00:01:12) sampling time per batch: 0.213 sec
+2022-08-15 21:10:37,064 (Elapsed: 00:01:12) Saved at: /data/users/fz920/expr/gpu_0_samples_102.npz
+2022-08-15 21:10:37,276 (Elapsed: 00:01:13) sampling time per batch: 0.212 sec
+2022-08-15 21:10:37,354 (Elapsed: 00:01:13) Saved at: /data/users/fz920/expr/gpu_0_samples_103.npz
+2022-08-15 21:10:37,567 (Elapsed: 00:01:13) sampling time per batch: 0.213 sec
+2022-08-15 21:10:37,645 (Elapsed: 00:01:13) Saved at: /data/users/fz920/expr/gpu_0_samples_104.npz
+2022-08-15 21:10:37,858 (Elapsed: 00:01:13) sampling time per batch: 0.213 sec
+2022-08-15 21:10:37,936 (Elapsed: 00:01:13) Saved at: /data/users/fz920/expr/gpu_0_samples_105.npz
+2022-08-15 21:10:38,149 (Elapsed: 00:01:13) sampling time per batch: 0.213 sec
+2022-08-15 21:10:38,228 (Elapsed: 00:01:14) Saved at: /data/users/fz920/expr/gpu_0_samples_106.npz
+2022-08-15 21:10:38,441 (Elapsed: 00:01:14) sampling time per batch: 0.213 sec
+2022-08-15 21:10:38,520 (Elapsed: 00:01:14) Saved at: /data/users/fz920/expr/gpu_0_samples_107.npz
+2022-08-15 21:10:38,774 (Elapsed: 00:01:14) sampling time per batch: 0.213 sec
+2022-08-15 21:10:38,852 (Elapsed: 00:01:14) Saved at: /data/users/fz920/expr/gpu_0_samples_108.npz
+2022-08-15 21:10:39,066 (Elapsed: 00:01:14) sampling time per batch: 0.213 sec
+2022-08-15 21:10:39,143 (Elapsed: 00:01:14) Saved at: /data/users/fz920/expr/gpu_0_samples_109.npz
+2022-08-15 21:10:39,357 (Elapsed: 00:01:15) sampling time per batch: 0.213 sec
+2022-08-15 21:10:39,436 (Elapsed: 00:01:15) Saved at: /data/users/fz920/expr/gpu_0_samples_110.npz
+2022-08-15 21:10:39,649 (Elapsed: 00:01:15) sampling time per batch: 0.213 sec
+2022-08-15 21:10:39,728 (Elapsed: 00:01:15) Saved at: /data/users/fz920/expr/gpu_0_samples_111.npz
+2022-08-15 21:10:39,941 (Elapsed: 00:01:15) sampling time per batch: 0.213 sec
+2022-08-15 21:10:40,020 (Elapsed: 00:01:15) Saved at: /data/users/fz920/expr/gpu_0_samples_112.npz
+2022-08-15 21:10:40,233 (Elapsed: 00:01:16) sampling time per batch: 0.213 sec
+2022-08-15 21:10:40,311 (Elapsed: 00:01:16) Saved at: /data/users/fz920/expr/gpu_0_samples_113.npz
+2022-08-15 21:10:40,524 (Elapsed: 00:01:16) sampling time per batch: 0.213 sec
+2022-08-15 21:10:40,602 (Elapsed: 00:01:16) Saved at: /data/users/fz920/expr/gpu_0_samples_114.npz
+2022-08-15 21:10:40,816 (Elapsed: 00:01:16) sampling time per batch: 0.214 sec
+2022-08-15 21:10:40,894 (Elapsed: 00:01:16) Saved at: /data/users/fz920/expr/gpu_0_samples_115.npz
+2022-08-15 21:10:41,107 (Elapsed: 00:01:16) sampling time per batch: 0.213 sec
+2022-08-15 21:10:41,186 (Elapsed: 00:01:17) Saved at: /data/users/fz920/expr/gpu_0_samples_116.npz
+2022-08-15 21:10:41,399 (Elapsed: 00:01:17) sampling time per batch: 0.213 sec
+2022-08-15 21:10:41,477 (Elapsed: 00:01:17) Saved at: /data/users/fz920/expr/gpu_0_samples_117.npz
+2022-08-15 21:10:41,690 (Elapsed: 00:01:17) sampling time per batch: 0.213 sec
+2022-08-15 21:10:41,768 (Elapsed: 00:01:17) Saved at: /data/users/fz920/expr/gpu_0_samples_118.npz
+2022-08-15 21:10:41,982 (Elapsed: 00:01:17) sampling time per batch: 0.213 sec
+2022-08-15 21:10:42,060 (Elapsed: 00:01:17) Saved at: /data/users/fz920/expr/gpu_0_samples_119.npz
+2022-08-15 21:10:42,273 (Elapsed: 00:01:18) sampling time per batch: 0.213 sec
+2022-08-15 21:10:42,351 (Elapsed: 00:01:18) Saved at: /data/users/fz920/expr/gpu_0_samples_120.npz
+2022-08-15 21:10:42,564 (Elapsed: 00:01:18) sampling time per batch: 0.213 sec
+2022-08-15 21:10:42,642 (Elapsed: 00:01:18) Saved at: /data/users/fz920/expr/gpu_0_samples_121.npz
+2022-08-15 21:10:42,856 (Elapsed: 00:01:18) sampling time per batch: 0.213 sec
+2022-08-15 21:10:42,934 (Elapsed: 00:01:18) Saved at: /data/users/fz920/expr/gpu_0_samples_122.npz
+2022-08-15 21:10:43,148 (Elapsed: 00:01:18) sampling time per batch: 0.213 sec
+2022-08-15 21:10:43,226 (Elapsed: 00:01:19) Saved at: /data/users/fz920/expr/gpu_0_samples_123.npz
+2022-08-15 21:10:43,439 (Elapsed: 00:01:19) sampling time per batch: 0.213 sec
+2022-08-15 21:10:43,517 (Elapsed: 00:01:19) Saved at: /data/users/fz920/expr/gpu_0_samples_124.npz
+2022-08-15 21:10:43,772 (Elapsed: 00:01:19) sampling time per batch: 0.213 sec
+2022-08-15 21:10:43,850 (Elapsed: 00:01:19) Saved at: /data/users/fz920/expr/gpu_0_samples_125.npz
+2022-08-15 21:10:44,064 (Elapsed: 00:01:19) sampling time per batch: 0.213 sec
+2022-08-15 21:10:44,142 (Elapsed: 00:01:19) Saved at: /data/users/fz920/expr/gpu_0_samples_126.npz
+2022-08-15 21:10:44,356 (Elapsed: 00:01:20) sampling time per batch: 0.214 sec
+2022-08-15 21:10:44,435 (Elapsed: 00:01:20) Saved at: /data/users/fz920/expr/gpu_0_samples_127.npz
+2022-08-15 21:10:44,648 (Elapsed: 00:01:20) sampling time per batch: 0.213 sec
+2022-08-15 21:10:44,726 (Elapsed: 00:01:20) Saved at: /data/users/fz920/expr/gpu_0_samples_128.npz
+2022-08-15 21:10:44,940 (Elapsed: 00:01:20) sampling time per batch: 0.214 sec
+2022-08-15 21:10:45,018 (Elapsed: 00:01:20) Saved at: /data/users/fz920/expr/gpu_0_samples_129.npz
+2022-08-15 21:10:45,232 (Elapsed: 00:01:21) sampling time per batch: 0.213 sec
+2022-08-15 21:10:45,310 (Elapsed: 00:01:21) Saved at: /data/users/fz920/expr/gpu_0_samples_130.npz
+2022-08-15 21:10:45,524 (Elapsed: 00:01:21) sampling time per batch: 0.213 sec
+2022-08-15 21:10:45,602 (Elapsed: 00:01:21) Saved at: /data/users/fz920/expr/gpu_0_samples_131.npz
+2022-08-15 21:10:45,815 (Elapsed: 00:01:21) sampling time per batch: 0.213 sec
+2022-08-15 21:10:45,894 (Elapsed: 00:01:21) Saved at: /data/users/fz920/expr/gpu_0_samples_132.npz
+2022-08-15 21:10:46,107 (Elapsed: 00:01:21) sampling time per batch: 0.213 sec
+2022-08-15 21:10:46,185 (Elapsed: 00:01:22) Saved at: /data/users/fz920/expr/gpu_0_samples_133.npz
+2022-08-15 21:10:46,398 (Elapsed: 00:01:22) sampling time per batch: 0.213 sec
+2022-08-15 21:10:46,477 (Elapsed: 00:01:22) Saved at: /data/users/fz920/expr/gpu_0_samples_134.npz
+2022-08-15 21:10:46,690 (Elapsed: 00:01:22) sampling time per batch: 0.213 sec
+2022-08-15 21:10:46,769 (Elapsed: 00:01:22) Saved at: /data/users/fz920/expr/gpu_0_samples_135.npz
+2022-08-15 21:10:46,982 (Elapsed: 00:01:22) sampling time per batch: 0.214 sec
+2022-08-15 21:10:47,060 (Elapsed: 00:01:22) Saved at: /data/users/fz920/expr/gpu_0_samples_136.npz
+2022-08-15 21:10:47,274 (Elapsed: 00:01:23) sampling time per batch: 0.213 sec
+2022-08-15 21:10:47,352 (Elapsed: 00:01:23) Saved at: /data/users/fz920/expr/gpu_0_samples_137.npz
+2022-08-15 21:10:47,565 (Elapsed: 00:01:23) sampling time per batch: 0.213 sec
+2022-08-15 21:10:47,644 (Elapsed: 00:01:23) Saved at: /data/users/fz920/expr/gpu_0_samples_138.npz
+2022-08-15 21:10:47,857 (Elapsed: 00:01:23) sampling time per batch: 0.213 sec
+2022-08-15 21:10:47,936 (Elapsed: 00:01:23) Saved at: /data/users/fz920/expr/gpu_0_samples_139.npz
+2022-08-15 21:10:48,150 (Elapsed: 00:01:23) sampling time per batch: 0.214 sec
+2022-08-15 21:10:48,228 (Elapsed: 00:01:24) Saved at: /data/users/fz920/expr/gpu_0_samples_140.npz
+2022-08-15 21:10:48,442 (Elapsed: 00:01:24) sampling time per batch: 0.214 sec
+2022-08-15 21:10:48,521 (Elapsed: 00:01:24) Saved at: /data/users/fz920/expr/gpu_0_samples_141.npz
+2022-08-15 21:10:48,777 (Elapsed: 00:01:24) sampling time per batch: 0.214 sec
+2022-08-15 21:10:48,856 (Elapsed: 00:01:24) Saved at: /data/users/fz920/expr/gpu_0_samples_142.npz
+2022-08-15 21:10:49,070 (Elapsed: 00:01:24) sampling time per batch: 0.213 sec
+2022-08-15 21:10:49,148 (Elapsed: 00:01:24) Saved at: /data/users/fz920/expr/gpu_0_samples_143.npz
+2022-08-15 21:10:49,362 (Elapsed: 00:01:25) sampling time per batch: 0.214 sec
+2022-08-15 21:10:49,441 (Elapsed: 00:01:25) Saved at: /data/users/fz920/expr/gpu_0_samples_144.npz
+2022-08-15 21:10:49,654 (Elapsed: 00:01:25) sampling time per batch: 0.214 sec
+2022-08-15 21:10:49,734 (Elapsed: 00:01:25) Saved at: /data/users/fz920/expr/gpu_0_samples_145.npz
+2022-08-15 21:10:49,947 (Elapsed: 00:01:25) sampling time per batch: 0.213 sec
+2022-08-15 21:10:50,025 (Elapsed: 00:01:25) Saved at: /data/users/fz920/expr/gpu_0_samples_146.npz
+2022-08-15 21:10:50,239 (Elapsed: 00:01:26) sampling time per batch: 0.213 sec
+2022-08-15 21:10:50,317 (Elapsed: 00:01:26) Saved at: /data/users/fz920/expr/gpu_0_samples_147.npz
+2022-08-15 21:10:50,531 (Elapsed: 00:01:26) sampling time per batch: 0.213 sec
+2022-08-15 21:10:50,610 (Elapsed: 00:01:26) Saved at: /data/users/fz920/expr/gpu_0_samples_148.npz
+2022-08-15 21:10:50,823 (Elapsed: 00:01:26) sampling time per batch: 0.213 sec
+2022-08-15 21:10:50,902 (Elapsed: 00:01:26) Saved at: /data/users/fz920/expr/gpu_0_samples_149.npz
+2022-08-15 21:10:51,116 (Elapsed: 00:01:26) sampling time per batch: 0.213 sec
+2022-08-15 21:10:51,194 (Elapsed: 00:01:27) Saved at: /data/users/fz920/expr/gpu_0_samples_150.npz
+2022-08-15 21:10:51,408 (Elapsed: 00:01:27) sampling time per batch: 0.214 sec
+2022-08-15 21:10:51,487 (Elapsed: 00:01:27) Saved at: /data/users/fz920/expr/gpu_0_samples_151.npz
+2022-08-15 21:10:51,701 (Elapsed: 00:01:27) sampling time per batch: 0.213 sec
+2022-08-15 21:10:51,780 (Elapsed: 00:01:27) Saved at: /data/users/fz920/expr/gpu_0_samples_152.npz
+2022-08-15 21:10:51,993 (Elapsed: 00:01:27) sampling time per batch: 0.213 sec
+2022-08-15 21:10:52,071 (Elapsed: 00:01:27) Saved at: /data/users/fz920/expr/gpu_0_samples_153.npz
+2022-08-15 21:10:52,285 (Elapsed: 00:01:28) sampling time per batch: 0.214 sec
+2022-08-15 21:10:52,363 (Elapsed: 00:01:28) Saved at: /data/users/fz920/expr/gpu_0_samples_154.npz
+2022-08-15 21:10:52,576 (Elapsed: 00:01:28) sampling time per batch: 0.213 sec
+2022-08-15 21:10:52,655 (Elapsed: 00:01:28) Saved at: /data/users/fz920/expr/gpu_0_samples_155.npz
+2022-08-15 21:10:52,869 (Elapsed: 00:01:28) sampling time per batch: 0.214 sec
+2022-08-15 21:10:52,947 (Elapsed: 00:01:28) Saved at: /data/users/fz920/expr/gpu_0_samples_156.npz
+2022-08-15 21:10:53,161 (Elapsed: 00:01:28) sampling time per batch: 0.214 sec
+2022-08-15 21:10:53,240 (Elapsed: 00:01:29) Saved at: /data/users/fz920/expr/gpu_0_samples_157.npz
+2022-08-15 21:10:53,454 (Elapsed: 00:01:29) sampling time per batch: 0.214 sec
+2022-08-15 21:10:53,533 (Elapsed: 00:01:29) Saved at: /data/users/fz920/expr/gpu_0_samples_158.npz
+2022-08-15 21:10:53,792 (Elapsed: 00:01:29) sampling time per batch: 0.214 sec
+2022-08-15 21:10:53,870 (Elapsed: 00:01:29) Saved at: /data/users/fz920/expr/gpu_0_samples_159.npz
+2022-08-15 21:10:54,084 (Elapsed: 00:01:29) sampling time per batch: 0.214 sec
+2022-08-15 21:10:54,162 (Elapsed: 00:01:29) Saved at: /data/users/fz920/expr/gpu_0_samples_160.npz
+2022-08-15 21:10:54,375 (Elapsed: 00:01:30) sampling time per batch: 0.213 sec
+2022-08-15 21:10:54,455 (Elapsed: 00:01:30) Saved at: /data/users/fz920/expr/gpu_0_samples_161.npz
+2022-08-15 21:10:54,670 (Elapsed: 00:01:30) sampling time per batch: 0.214 sec
+2022-08-15 21:10:54,748 (Elapsed: 00:01:30) Saved at: /data/users/fz920/expr/gpu_0_samples_162.npz
+2022-08-15 21:10:54,961 (Elapsed: 00:01:30) sampling time per batch: 0.214 sec
+2022-08-15 21:10:55,040 (Elapsed: 00:01:30) Saved at: /data/users/fz920/expr/gpu_0_samples_163.npz
+2022-08-15 21:10:55,254 (Elapsed: 00:01:31) sampling time per batch: 0.214 sec
+2022-08-15 21:10:55,333 (Elapsed: 00:01:31) Saved at: /data/users/fz920/expr/gpu_0_samples_164.npz
+2022-08-15 21:10:55,546 (Elapsed: 00:01:31) sampling time per batch: 0.214 sec
+2022-08-15 21:10:55,625 (Elapsed: 00:01:31) Saved at: /data/users/fz920/expr/gpu_0_samples_165.npz
+2022-08-15 21:10:55,838 (Elapsed: 00:01:31) sampling time per batch: 0.213 sec
+2022-08-15 21:10:55,916 (Elapsed: 00:01:31) Saved at: /data/users/fz920/expr/gpu_0_samples_166.npz
+2022-08-15 21:10:56,129 (Elapsed: 00:01:31) sampling time per batch: 0.213 sec
+2022-08-15 21:10:56,208 (Elapsed: 00:01:32) Saved at: /data/users/fz920/expr/gpu_0_samples_167.npz
+2022-08-15 21:10:56,421 (Elapsed: 00:01:32) sampling time per batch: 0.213 sec
+2022-08-15 21:10:56,500 (Elapsed: 00:01:32) Saved at: /data/users/fz920/expr/gpu_0_samples_168.npz
+2022-08-15 21:10:56,713 (Elapsed: 00:01:32) sampling time per batch: 0.213 sec
+2022-08-15 21:10:56,792 (Elapsed: 00:01:32) Saved at: /data/users/fz920/expr/gpu_0_samples_169.npz
+2022-08-15 21:10:57,004 (Elapsed: 00:01:32) sampling time per batch: 0.212 sec
+2022-08-15 21:10:57,082 (Elapsed: 00:01:32) Saved at: /data/users/fz920/expr/gpu_0_samples_170.npz
+2022-08-15 21:10:57,295 (Elapsed: 00:01:33) sampling time per batch: 0.213 sec
+2022-08-15 21:10:57,375 (Elapsed: 00:01:33) Saved at: /data/users/fz920/expr/gpu_0_samples_171.npz
+2022-08-15 21:10:57,588 (Elapsed: 00:01:33) sampling time per batch: 0.213 sec
+2022-08-15 21:10:57,667 (Elapsed: 00:01:33) Saved at: /data/users/fz920/expr/gpu_0_samples_172.npz
+2022-08-15 21:10:57,880 (Elapsed: 00:01:33) sampling time per batch: 0.213 sec
+2022-08-15 21:10:57,958 (Elapsed: 00:01:33) Saved at: /data/users/fz920/expr/gpu_0_samples_173.npz
+2022-08-15 21:10:58,170 (Elapsed: 00:01:33) sampling time per batch: 0.213 sec
+2022-08-15 21:10:58,248 (Elapsed: 00:01:34) Saved at: /data/users/fz920/expr/gpu_0_samples_174.npz
+2022-08-15 21:10:58,461 (Elapsed: 00:01:34) sampling time per batch: 0.212 sec
+2022-08-15 21:10:58,540 (Elapsed: 00:01:34) Saved at: /data/users/fz920/expr/gpu_0_samples_175.npz
+2022-08-15 21:10:58,795 (Elapsed: 00:01:34) sampling time per batch: 0.213 sec
+2022-08-15 21:10:58,873 (Elapsed: 00:01:34) Saved at: /data/users/fz920/expr/gpu_0_samples_176.npz
+2022-08-15 21:10:59,085 (Elapsed: 00:01:34) sampling time per batch: 0.212 sec
+2022-08-15 21:10:59,163 (Elapsed: 00:01:34) Saved at: /data/users/fz920/expr/gpu_0_samples_177.npz
+2022-08-15 21:10:59,376 (Elapsed: 00:01:35) sampling time per batch: 0.213 sec
+2022-08-15 21:10:59,457 (Elapsed: 00:01:35) Saved at: /data/users/fz920/expr/gpu_0_samples_178.npz
+2022-08-15 21:10:59,670 (Elapsed: 00:01:35) sampling time per batch: 0.213 sec
+2022-08-15 21:10:59,749 (Elapsed: 00:01:35) Saved at: /data/users/fz920/expr/gpu_0_samples_179.npz
+2022-08-15 21:10:59,962 (Elapsed: 00:01:35) sampling time per batch: 0.212 sec
+2022-08-15 21:11:00,040 (Elapsed: 00:01:35) Saved at: /data/users/fz920/expr/gpu_0_samples_180.npz
+2022-08-15 21:11:00,253 (Elapsed: 00:01:36) sampling time per batch: 0.213 sec
+2022-08-15 21:11:00,331 (Elapsed: 00:01:36) Saved at: /data/users/fz920/expr/gpu_0_samples_181.npz
+2022-08-15 21:11:00,544 (Elapsed: 00:01:36) sampling time per batch: 0.212 sec
+2022-08-15 21:11:00,622 (Elapsed: 00:01:36) Saved at: /data/users/fz920/expr/gpu_0_samples_182.npz
+2022-08-15 21:11:00,836 (Elapsed: 00:01:36) sampling time per batch: 0.213 sec
+2022-08-15 21:11:00,916 (Elapsed: 00:01:36) Saved at: /data/users/fz920/expr/gpu_0_samples_183.npz
+2022-08-15 21:11:01,129 (Elapsed: 00:01:36) sampling time per batch: 0.213 sec
+2022-08-15 21:11:01,207 (Elapsed: 00:01:37) Saved at: /data/users/fz920/expr/gpu_0_samples_184.npz
+2022-08-15 21:11:01,419 (Elapsed: 00:01:37) sampling time per batch: 0.212 sec
+2022-08-15 21:11:01,499 (Elapsed: 00:01:37) Saved at: /data/users/fz920/expr/gpu_0_samples_185.npz
+2022-08-15 21:11:01,712 (Elapsed: 00:01:37) sampling time per batch: 0.213 sec
+2022-08-15 21:11:01,790 (Elapsed: 00:01:37) Saved at: /data/users/fz920/expr/gpu_0_samples_186.npz
+2022-08-15 21:11:02,003 (Elapsed: 00:01:37) sampling time per batch: 0.213 sec
+2022-08-15 21:11:02,082 (Elapsed: 00:01:37) Saved at: /data/users/fz920/expr/gpu_0_samples_187.npz
+2022-08-15 21:11:02,295 (Elapsed: 00:01:38) sampling time per batch: 0.213 sec
+2022-08-15 21:11:02,373 (Elapsed: 00:01:38) Saved at: /data/users/fz920/expr/gpu_0_samples_188.npz
+2022-08-15 21:11:02,586 (Elapsed: 00:01:38) sampling time per batch: 0.213 sec
+2022-08-15 21:11:02,665 (Elapsed: 00:01:38) Saved at: /data/users/fz920/expr/gpu_0_samples_189.npz
+2022-08-15 21:11:02,878 (Elapsed: 00:01:38) sampling time per batch: 0.213 sec
+2022-08-15 21:11:02,957 (Elapsed: 00:01:38) Saved at: /data/users/fz920/expr/gpu_0_samples_190.npz
+2022-08-15 21:11:03,169 (Elapsed: 00:01:38) sampling time per batch: 0.212 sec
+2022-08-15 21:11:03,249 (Elapsed: 00:01:39) Saved at: /data/users/fz920/expr/gpu_0_samples_191.npz
+2022-08-15 21:11:03,462 (Elapsed: 00:01:39) sampling time per batch: 0.213 sec
+2022-08-15 21:11:03,540 (Elapsed: 00:01:39) Saved at: /data/users/fz920/expr/gpu_0_samples_192.npz
+2022-08-15 21:11:03,827 (Elapsed: 00:01:39) sampling time per batch: 0.213 sec
+2022-08-15 21:11:03,905 (Elapsed: 00:01:39) Saved at: /data/users/fz920/expr/gpu_0_samples_193.npz
+2022-08-15 21:11:04,118 (Elapsed: 00:01:39) sampling time per batch: 0.213 sec
+2022-08-15 21:11:04,197 (Elapsed: 00:01:40) Saved at: /data/users/fz920/expr/gpu_0_samples_194.npz
+2022-08-15 21:11:04,410 (Elapsed: 00:01:40) sampling time per batch: 0.213 sec
+2022-08-15 21:11:04,490 (Elapsed: 00:01:40) Saved at: /data/users/fz920/expr/gpu_0_samples_195.npz
+2022-08-15 21:11:04,703 (Elapsed: 00:01:40) sampling time per batch: 0.213 sec
+2022-08-15 21:11:04,782 (Elapsed: 00:01:40) Saved at: /data/users/fz920/expr/gpu_0_samples_196.npz
+2022-08-15 21:11:04,994 (Elapsed: 00:01:40) sampling time per batch: 0.212 sec
+2022-08-15 21:11:05,073 (Elapsed: 00:01:40) Saved at: /data/users/fz920/expr/gpu_0_samples_197.npz
+2022-08-15 21:11:05,286 (Elapsed: 00:01:41) sampling time per batch: 0.213 sec
+2022-08-15 21:11:05,365 (Elapsed: 00:01:41) Saved at: /data/users/fz920/expr/gpu_0_samples_198.npz
+2022-08-15 21:11:05,578 (Elapsed: 00:01:41) sampling time per batch: 0.213 sec
+2022-08-15 21:11:05,658 (Elapsed: 00:01:41) Saved at: /data/users/fz920/expr/gpu_0_samples_199.npz
+2022-08-15 21:11:05,871 (Elapsed: 00:01:41) sampling time per batch: 0.213 sec
+2022-08-15 21:11:05,949 (Elapsed: 00:01:41) Saved at: /data/users/fz920/expr/gpu_0_samples_200.npz
+2022-08-15 21:11:06,162 (Elapsed: 00:01:41) sampling time per batch: 0.213 sec
+2022-08-15 21:11:06,241 (Elapsed: 00:01:42) Saved at: /data/users/fz920/expr/gpu_0_samples_201.npz
+2022-08-15 21:11:06,454 (Elapsed: 00:01:42) sampling time per batch: 0.213 sec
+2022-08-15 21:11:06,533 (Elapsed: 00:01:42) Saved at: /data/users/fz920/expr/gpu_0_samples_202.npz
+2022-08-15 21:11:06,746 (Elapsed: 00:01:42) sampling time per batch: 0.213 sec
+2022-08-15 21:11:06,824 (Elapsed: 00:01:42) Saved at: /data/users/fz920/expr/gpu_0_samples_203.npz
+2022-08-15 21:11:07,037 (Elapsed: 00:01:42) sampling time per batch: 0.213 sec
+2022-08-15 21:11:07,116 (Elapsed: 00:01:42) Saved at: /data/users/fz920/expr/gpu_0_samples_204.npz
+2022-08-15 21:11:07,329 (Elapsed: 00:01:43) sampling time per batch: 0.213 sec
+2022-08-15 21:11:07,407 (Elapsed: 00:01:43) Saved at: /data/users/fz920/expr/gpu_0_samples_205.npz
+2022-08-15 21:11:07,620 (Elapsed: 00:01:43) sampling time per batch: 0.213 sec
+2022-08-15 21:11:07,699 (Elapsed: 00:01:43) Saved at: /data/users/fz920/expr/gpu_0_samples_206.npz
+2022-08-15 21:11:07,912 (Elapsed: 00:01:43) sampling time per batch: 0.213 sec
+2022-08-15 21:11:07,990 (Elapsed: 00:01:43) Saved at: /data/users/fz920/expr/gpu_0_samples_207.npz
+2022-08-15 21:11:08,203 (Elapsed: 00:01:44) sampling time per batch: 0.213 sec
+2022-08-15 21:11:08,282 (Elapsed: 00:01:44) Saved at: /data/users/fz920/expr/gpu_0_samples_208.npz
+2022-08-15 21:11:08,494 (Elapsed: 00:01:44) sampling time per batch: 0.212 sec
+2022-08-15 21:11:08,572 (Elapsed: 00:01:44) Saved at: /data/users/fz920/expr/gpu_0_samples_209.npz
+2022-08-15 21:11:08,785 (Elapsed: 00:01:44) sampling time per batch: 0.213 sec
+2022-08-15 21:11:08,864 (Elapsed: 00:01:44) Saved at: /data/users/fz920/expr/gpu_0_samples_210.npz
+2022-08-15 21:11:09,077 (Elapsed: 00:01:44) sampling time per batch: 0.213 sec
+2022-08-15 21:11:09,155 (Elapsed: 00:01:44) Saved at: /data/users/fz920/expr/gpu_0_samples_211.npz
+2022-08-15 21:11:09,368 (Elapsed: 00:01:45) sampling time per batch: 0.213 sec
+2022-08-15 21:11:09,447 (Elapsed: 00:01:45) Saved at: /data/users/fz920/expr/gpu_0_samples_212.npz
+2022-08-15 21:11:09,661 (Elapsed: 00:01:45) sampling time per batch: 0.213 sec
+2022-08-15 21:11:09,739 (Elapsed: 00:01:45) Saved at: /data/users/fz920/expr/gpu_0_samples_213.npz
+2022-08-15 21:11:09,953 (Elapsed: 00:01:45) sampling time per batch: 0.213 sec
+2022-08-15 21:11:10,031 (Elapsed: 00:01:45) Saved at: /data/users/fz920/expr/gpu_0_samples_214.npz
+2022-08-15 21:11:10,244 (Elapsed: 00:01:46) sampling time per batch: 0.213 sec
+2022-08-15 21:11:10,322 (Elapsed: 00:01:46) Saved at: /data/users/fz920/expr/gpu_0_samples_215.npz
+2022-08-15 21:11:10,535 (Elapsed: 00:01:46) sampling time per batch: 0.213 sec
+2022-08-15 21:11:10,613 (Elapsed: 00:01:46) Saved at: /data/users/fz920/expr/gpu_0_samples_216.npz
+2022-08-15 21:11:10,826 (Elapsed: 00:01:46) sampling time per batch: 0.213 sec
+2022-08-15 21:11:10,905 (Elapsed: 00:01:46) Saved at: /data/users/fz920/expr/gpu_0_samples_217.npz
+2022-08-15 21:11:11,118 (Elapsed: 00:01:46) sampling time per batch: 0.213 sec
+2022-08-15 21:11:11,197 (Elapsed: 00:01:47) Saved at: /data/users/fz920/expr/gpu_0_samples_218.npz
+2022-08-15 21:11:11,410 (Elapsed: 00:01:47) sampling time per batch: 0.213 sec
+2022-08-15 21:11:11,490 (Elapsed: 00:01:47) Saved at: /data/users/fz920/expr/gpu_0_samples_219.npz
+2022-08-15 21:11:11,704 (Elapsed: 00:01:47) sampling time per batch: 0.213 sec
+2022-08-15 21:11:11,782 (Elapsed: 00:01:47) Saved at: /data/users/fz920/expr/gpu_0_samples_220.npz
+2022-08-15 21:11:11,995 (Elapsed: 00:01:47) sampling time per batch: 0.213 sec
+2022-08-15 21:11:12,074 (Elapsed: 00:01:47) Saved at: /data/users/fz920/expr/gpu_0_samples_221.npz
+2022-08-15 21:11:12,288 (Elapsed: 00:01:48) sampling time per batch: 0.214 sec
+2022-08-15 21:11:12,366 (Elapsed: 00:01:48) Saved at: /data/users/fz920/expr/gpu_0_samples_222.npz
+2022-08-15 21:11:12,579 (Elapsed: 00:01:48) sampling time per batch: 0.213 sec
+2022-08-15 21:11:12,658 (Elapsed: 00:01:48) Saved at: /data/users/fz920/expr/gpu_0_samples_223.npz
+2022-08-15 21:11:12,871 (Elapsed: 00:01:48) sampling time per batch: 0.213 sec
+2022-08-15 21:11:12,949 (Elapsed: 00:01:48) Saved at: /data/users/fz920/expr/gpu_0_samples_224.npz
+2022-08-15 21:11:13,162 (Elapsed: 00:01:48) sampling time per batch: 0.213 sec
+2022-08-15 21:11:13,240 (Elapsed: 00:01:49) Saved at: /data/users/fz920/expr/gpu_0_samples_225.npz
+2022-08-15 21:11:13,453 (Elapsed: 00:01:49) sampling time per batch: 0.213 sec
+2022-08-15 21:11:13,533 (Elapsed: 00:01:49) Saved at: /data/users/fz920/expr/gpu_0_samples_226.npz
+2022-08-15 21:11:13,746 (Elapsed: 00:01:49) sampling time per batch: 0.213 sec
+2022-08-15 21:11:13,824 (Elapsed: 00:01:49) Saved at: /data/users/fz920/expr/gpu_0_samples_227.npz
+2022-08-15 21:11:14,037 (Elapsed: 00:01:49) sampling time per batch: 0.213 sec
+2022-08-15 21:11:14,118 (Elapsed: 00:01:49) Saved at: /data/users/fz920/expr/gpu_0_samples_228.npz
+2022-08-15 21:11:14,331 (Elapsed: 00:01:50) sampling time per batch: 0.213 sec
+2022-08-15 21:11:14,410 (Elapsed: 00:01:50) Saved at: /data/users/fz920/expr/gpu_0_samples_229.npz
+2022-08-15 21:11:14,624 (Elapsed: 00:01:50) sampling time per batch: 0.213 sec
+2022-08-15 21:11:14,703 (Elapsed: 00:01:50) Saved at: /data/users/fz920/expr/gpu_0_samples_230.npz
+2022-08-15 21:11:14,916 (Elapsed: 00:01:50) sampling time per batch: 0.213 sec
+2022-08-15 21:11:14,994 (Elapsed: 00:01:50) Saved at: /data/users/fz920/expr/gpu_0_samples_231.npz
+2022-08-15 21:11:15,208 (Elapsed: 00:01:51) sampling time per batch: 0.213 sec
+2022-08-15 21:11:15,285 (Elapsed: 00:01:51) Saved at: /data/users/fz920/expr/gpu_0_samples_232.npz
+2022-08-15 21:11:15,498 (Elapsed: 00:01:51) sampling time per batch: 0.213 sec
+2022-08-15 21:11:15,577 (Elapsed: 00:01:51) Saved at: /data/users/fz920/expr/gpu_0_samples_233.npz
+2022-08-15 21:11:15,790 (Elapsed: 00:01:51) sampling time per batch: 0.213 sec
+2022-08-15 21:11:15,868 (Elapsed: 00:01:51) Saved at: /data/users/fz920/expr/gpu_0_samples_234.npz
+2022-08-15 21:11:16,081 (Elapsed: 00:01:51) sampling time per batch: 0.213 sec
+2022-08-15 21:11:16,161 (Elapsed: 00:01:51) Saved at: /data/users/fz920/expr/gpu_0_samples_235.npz
+2022-08-15 21:11:16,375 (Elapsed: 00:01:52) sampling time per batch: 0.213 sec
+2022-08-15 21:11:16,454 (Elapsed: 00:01:52) Saved at: /data/users/fz920/expr/gpu_0_samples_236.npz
+2022-08-15 21:11:16,667 (Elapsed: 00:01:52) sampling time per batch: 0.213 sec
+2022-08-15 21:11:16,746 (Elapsed: 00:01:52) Saved at: /data/users/fz920/expr/gpu_0_samples_237.npz
+2022-08-15 21:11:16,959 (Elapsed: 00:01:52) sampling time per batch: 0.213 sec
+2022-08-15 21:11:17,038 (Elapsed: 00:01:52) Saved at: /data/users/fz920/expr/gpu_0_samples_238.npz
+2022-08-15 21:11:17,252 (Elapsed: 00:01:53) sampling time per batch: 0.214 sec
+2022-08-15 21:11:17,330 (Elapsed: 00:01:53) Saved at: /data/users/fz920/expr/gpu_0_samples_239.npz
+2022-08-15 21:11:17,543 (Elapsed: 00:01:53) sampling time per batch: 0.213 sec
+2022-08-15 21:11:17,621 (Elapsed: 00:01:53) Saved at: /data/users/fz920/expr/gpu_0_samples_240.npz
+2022-08-15 21:11:17,834 (Elapsed: 00:01:53) sampling time per batch: 0.213 sec
+2022-08-15 21:11:17,913 (Elapsed: 00:01:53) Saved at: /data/users/fz920/expr/gpu_0_samples_241.npz
+2022-08-15 21:11:18,126 (Elapsed: 00:01:53) sampling time per batch: 0.213 sec
+2022-08-15 21:11:18,205 (Elapsed: 00:01:54) Saved at: /data/users/fz920/expr/gpu_0_samples_242.npz
+2022-08-15 21:11:18,418 (Elapsed: 00:01:54) sampling time per batch: 0.213 sec
+2022-08-15 21:11:18,497 (Elapsed: 00:01:54) Saved at: /data/users/fz920/expr/gpu_0_samples_243.npz
+2022-08-15 21:11:18,711 (Elapsed: 00:01:54) sampling time per batch: 0.214 sec
+2022-08-15 21:11:18,822 (Elapsed: 00:01:54) Saved at: /data/users/fz920/expr/gpu_0_samples_244.npz
+2022-08-15 21:11:19,035 (Elapsed: 00:01:54) sampling time per batch: 0.214 sec
+2022-08-15 21:11:19,114 (Elapsed: 00:01:54) Saved at: /data/users/fz920/expr/gpu_0_samples_245.npz
+2022-08-15 21:11:19,327 (Elapsed: 00:01:55) sampling time per batch: 0.213 sec
+2022-08-15 21:11:19,406 (Elapsed: 00:01:55) Saved at: /data/users/fz920/expr/gpu_0_samples_246.npz
+2022-08-15 21:11:19,620 (Elapsed: 00:01:55) sampling time per batch: 0.214 sec
+2022-08-15 21:11:19,699 (Elapsed: 00:01:55) Saved at: /data/users/fz920/expr/gpu_0_samples_247.npz
+2022-08-15 21:11:19,912 (Elapsed: 00:01:55) sampling time per batch: 0.213 sec
+2022-08-15 21:11:19,990 (Elapsed: 00:01:55) Saved at: /data/users/fz920/expr/gpu_0_samples_248.npz
+2022-08-15 21:11:20,203 (Elapsed: 00:01:56) sampling time per batch: 0.213 sec
+2022-08-15 21:11:20,282 (Elapsed: 00:01:56) Saved at: /data/users/fz920/expr/gpu_0_samples_249.npz
+2022-08-15 21:11:20,495 (Elapsed: 00:01:56) sampling time per batch: 0.213 sec
+2022-08-15 21:11:20,573 (Elapsed: 00:01:56) Saved at: /data/users/fz920/expr/gpu_0_samples_250.npz
+2022-08-15 21:11:20,786 (Elapsed: 00:01:56) sampling time per batch: 0.213 sec
+2022-08-15 21:11:20,865 (Elapsed: 00:01:56) Saved at: /data/users/fz920/expr/gpu_0_samples_251.npz
+2022-08-15 21:11:21,079 (Elapsed: 00:01:56) sampling time per batch: 0.213 sec
+2022-08-15 21:11:21,157 (Elapsed: 00:01:56) Saved at: /data/users/fz920/expr/gpu_0_samples_252.npz
+2022-08-15 21:11:21,371 (Elapsed: 00:01:57) sampling time per batch: 0.213 sec
+2022-08-15 21:11:21,449 (Elapsed: 00:01:57) Saved at: /data/users/fz920/expr/gpu_0_samples_253.npz
+2022-08-15 21:11:21,663 (Elapsed: 00:01:57) sampling time per batch: 0.214 sec
+2022-08-15 21:11:21,742 (Elapsed: 00:01:57) Saved at: /data/users/fz920/expr/gpu_0_samples_254.npz
+2022-08-15 21:11:21,956 (Elapsed: 00:01:57) sampling time per batch: 0.213 sec
+2022-08-15 21:11:22,035 (Elapsed: 00:01:57) Saved at: /data/users/fz920/expr/gpu_0_samples_255.npz
+2022-08-15 21:11:22,249 (Elapsed: 00:01:58) sampling time per batch: 0.214 sec
+2022-08-15 21:11:22,327 (Elapsed: 00:01:58) Saved at: /data/users/fz920/expr/gpu_0_samples_256.npz
+2022-08-15 21:11:22,541 (Elapsed: 00:01:58) sampling time per batch: 0.214 sec
+2022-08-15 21:11:22,619 (Elapsed: 00:01:58) Saved at: /data/users/fz920/expr/gpu_0_samples_257.npz
+2022-08-15 21:11:22,832 (Elapsed: 00:01:58) sampling time per batch: 0.213 sec
+2022-08-15 21:11:22,911 (Elapsed: 00:01:58) Saved at: /data/users/fz920/expr/gpu_0_samples_258.npz
+2022-08-15 21:11:23,125 (Elapsed: 00:01:58) sampling time per batch: 0.213 sec
+2022-08-15 21:11:23,203 (Elapsed: 00:01:59) Saved at: /data/users/fz920/expr/gpu_0_samples_259.npz
+2022-08-15 21:11:23,416 (Elapsed: 00:01:59) sampling time per batch: 0.213 sec
+2022-08-15 21:11:23,495 (Elapsed: 00:01:59) Saved at: /data/users/fz920/expr/gpu_0_samples_260.npz
+2022-08-15 21:11:23,709 (Elapsed: 00:01:59) sampling time per batch: 0.213 sec
+2022-08-15 21:11:23,832 (Elapsed: 00:01:59) Saved at: /data/users/fz920/expr/gpu_0_samples_261.npz
+2022-08-15 21:11:24,046 (Elapsed: 00:01:59) sampling time per batch: 0.214 sec
+2022-08-15 21:11:24,126 (Elapsed: 00:01:59) Saved at: /data/users/fz920/expr/gpu_0_samples_262.npz
+2022-08-15 21:11:24,339 (Elapsed: 00:02:00) sampling time per batch: 0.213 sec
+2022-08-15 21:11:24,418 (Elapsed: 00:02:00) Saved at: /data/users/fz920/expr/gpu_0_samples_263.npz
+2022-08-15 21:11:24,632 (Elapsed: 00:02:00) sampling time per batch: 0.213 sec
+2022-08-15 21:11:24,710 (Elapsed: 00:02:00) Saved at: /data/users/fz920/expr/gpu_0_samples_264.npz
+2022-08-15 21:11:24,924 (Elapsed: 00:02:00) sampling time per batch: 0.214 sec
+2022-08-15 21:11:25,003 (Elapsed: 00:02:00) Saved at: /data/users/fz920/expr/gpu_0_samples_265.npz
+2022-08-15 21:11:25,216 (Elapsed: 00:02:01) sampling time per batch: 0.213 sec
+2022-08-15 21:11:25,295 (Elapsed: 00:02:01) Saved at: /data/users/fz920/expr/gpu_0_samples_266.npz
+2022-08-15 21:11:25,508 (Elapsed: 00:02:01) sampling time per batch: 0.214 sec
+2022-08-15 21:11:25,586 (Elapsed: 00:02:01) Saved at: /data/users/fz920/expr/gpu_0_samples_267.npz
+2022-08-15 21:11:25,799 (Elapsed: 00:02:01) sampling time per batch: 0.213 sec
+2022-08-15 21:11:25,877 (Elapsed: 00:02:01) Saved at: /data/users/fz920/expr/gpu_0_samples_268.npz
+2022-08-15 21:11:26,091 (Elapsed: 00:02:01) sampling time per batch: 0.213 sec
+2022-08-15 21:11:26,169 (Elapsed: 00:02:01) Saved at: /data/users/fz920/expr/gpu_0_samples_269.npz
+2022-08-15 21:11:26,383 (Elapsed: 00:02:02) sampling time per batch: 0.213 sec
+2022-08-15 21:11:26,462 (Elapsed: 00:02:02) Saved at: /data/users/fz920/expr/gpu_0_samples_270.npz
+2022-08-15 21:11:26,675 (Elapsed: 00:02:02) sampling time per batch: 0.214 sec
+2022-08-15 21:11:26,754 (Elapsed: 00:02:02) Saved at: /data/users/fz920/expr/gpu_0_samples_271.npz
+2022-08-15 21:11:26,968 (Elapsed: 00:02:02) sampling time per batch: 0.214 sec
+2022-08-15 21:11:27,046 (Elapsed: 00:02:02) Saved at: /data/users/fz920/expr/gpu_0_samples_272.npz
+2022-08-15 21:11:27,260 (Elapsed: 00:02:03) sampling time per batch: 0.213 sec
+2022-08-15 21:11:27,338 (Elapsed: 00:02:03) Saved at: /data/users/fz920/expr/gpu_0_samples_273.npz
+2022-08-15 21:11:27,552 (Elapsed: 00:02:03) sampling time per batch: 0.214 sec
+2022-08-15 21:11:27,629 (Elapsed: 00:02:03) Saved at: /data/users/fz920/expr/gpu_0_samples_274.npz
+2022-08-15 21:11:27,843 (Elapsed: 00:02:03) sampling time per batch: 0.213 sec
+2022-08-15 21:11:27,920 (Elapsed: 00:02:03) Saved at: /data/users/fz920/expr/gpu_0_samples_275.npz
+2022-08-15 21:11:28,134 (Elapsed: 00:02:03) sampling time per batch: 0.213 sec
+2022-08-15 21:11:28,212 (Elapsed: 00:02:04) Saved at: /data/users/fz920/expr/gpu_0_samples_276.npz
+2022-08-15 21:11:28,426 (Elapsed: 00:02:04) sampling time per batch: 0.213 sec
+2022-08-15 21:11:28,505 (Elapsed: 00:02:04) Saved at: /data/users/fz920/expr/gpu_0_samples_277.npz
+2022-08-15 21:11:28,719 (Elapsed: 00:02:04) sampling time per batch: 0.214 sec
+2022-08-15 21:11:28,849 (Elapsed: 00:02:04) Saved at: /data/users/fz920/expr/gpu_0_samples_278.npz
+2022-08-15 21:11:29,063 (Elapsed: 00:02:04) sampling time per batch: 0.214 sec
+2022-08-15 21:11:29,143 (Elapsed: 00:02:04) Saved at: /data/users/fz920/expr/gpu_0_samples_279.npz
+2022-08-15 21:11:29,356 (Elapsed: 00:02:05) sampling time per batch: 0.213 sec
+2022-08-15 21:11:29,434 (Elapsed: 00:02:05) Saved at: /data/users/fz920/expr/gpu_0_samples_280.npz
+2022-08-15 21:11:29,647 (Elapsed: 00:02:05) sampling time per batch: 0.213 sec
+2022-08-15 21:11:29,727 (Elapsed: 00:02:05) Saved at: /data/users/fz920/expr/gpu_0_samples_281.npz
+2022-08-15 21:11:29,940 (Elapsed: 00:02:05) sampling time per batch: 0.213 sec
+2022-08-15 21:11:30,018 (Elapsed: 00:02:05) Saved at: /data/users/fz920/expr/gpu_0_samples_282.npz
+2022-08-15 21:11:30,232 (Elapsed: 00:02:06) sampling time per batch: 0.213 sec
+2022-08-15 21:11:30,309 (Elapsed: 00:02:06) Saved at: /data/users/fz920/expr/gpu_0_samples_283.npz
+2022-08-15 21:11:30,523 (Elapsed: 00:02:06) sampling time per batch: 0.213 sec
+2022-08-15 21:11:30,601 (Elapsed: 00:02:06) Saved at: /data/users/fz920/expr/gpu_0_samples_284.npz
+2022-08-15 21:11:30,815 (Elapsed: 00:02:06) sampling time per batch: 0.214 sec
+2022-08-15 21:11:30,893 (Elapsed: 00:02:06) Saved at: /data/users/fz920/expr/gpu_0_samples_285.npz
+2022-08-15 21:11:31,107 (Elapsed: 00:02:06) sampling time per batch: 0.214 sec
+2022-08-15 21:11:31,186 (Elapsed: 00:02:07) Saved at: /data/users/fz920/expr/gpu_0_samples_286.npz
+2022-08-15 21:11:31,399 (Elapsed: 00:02:07) sampling time per batch: 0.213 sec
+2022-08-15 21:11:31,479 (Elapsed: 00:02:07) Saved at: /data/users/fz920/expr/gpu_0_samples_287.npz
+2022-08-15 21:11:31,693 (Elapsed: 00:02:07) sampling time per batch: 0.214 sec
+2022-08-15 21:11:31,771 (Elapsed: 00:02:07) Saved at: /data/users/fz920/expr/gpu_0_samples_288.npz
+2022-08-15 21:11:31,985 (Elapsed: 00:02:07) sampling time per batch: 0.214 sec
+2022-08-15 21:11:32,062 (Elapsed: 00:02:07) Saved at: /data/users/fz920/expr/gpu_0_samples_289.npz
+2022-08-15 21:11:32,276 (Elapsed: 00:02:08) sampling time per batch: 0.213 sec
+2022-08-15 21:11:32,354 (Elapsed: 00:02:08) Saved at: /data/users/fz920/expr/gpu_0_samples_290.npz
+2022-08-15 21:11:32,567 (Elapsed: 00:02:08) sampling time per batch: 0.214 sec
+2022-08-15 21:11:32,646 (Elapsed: 00:02:08) Saved at: /data/users/fz920/expr/gpu_0_samples_291.npz
+2022-08-15 21:11:32,860 (Elapsed: 00:02:08) sampling time per batch: 0.214 sec
+2022-08-15 21:11:32,939 (Elapsed: 00:02:08) Saved at: /data/users/fz920/expr/gpu_0_samples_292.npz
+2022-08-15 21:11:33,153 (Elapsed: 00:02:08) sampling time per batch: 0.214 sec
+2022-08-15 21:11:33,231 (Elapsed: 00:02:09) Saved at: /data/users/fz920/expr/gpu_0_samples_293.npz
+2022-08-15 21:11:33,444 (Elapsed: 00:02:09) sampling time per batch: 0.213 sec
+2022-08-15 21:11:33,523 (Elapsed: 00:02:09) Saved at: /data/users/fz920/expr/gpu_0_samples_294.npz
+2022-08-15 21:11:33,737 (Elapsed: 00:02:09) sampling time per batch: 0.214 sec
+2022-08-15 21:11:33,868 (Elapsed: 00:02:09) Saved at: /data/users/fz920/expr/gpu_0_samples_295.npz
+2022-08-15 21:11:34,082 (Elapsed: 00:02:09) sampling time per batch: 0.214 sec
+2022-08-15 21:11:34,161 (Elapsed: 00:02:09) Saved at: /data/users/fz920/expr/gpu_0_samples_296.npz
+2022-08-15 21:11:34,374 (Elapsed: 00:02:10) sampling time per batch: 0.213 sec
+2022-08-15 21:11:34,453 (Elapsed: 00:02:10) Saved at: /data/users/fz920/expr/gpu_0_samples_297.npz
+2022-08-15 21:11:34,667 (Elapsed: 00:02:10) sampling time per batch: 0.214 sec
+2022-08-15 21:11:34,746 (Elapsed: 00:02:10) Saved at: /data/users/fz920/expr/gpu_0_samples_298.npz
+2022-08-15 21:11:34,960 (Elapsed: 00:02:10) sampling time per batch: 0.213 sec
+2022-08-15 21:11:35,040 (Elapsed: 00:02:10) Saved at: /data/users/fz920/expr/gpu_0_samples_299.npz
+2022-08-15 21:11:35,254 (Elapsed: 00:02:11) sampling time per batch: 0.214 sec
+2022-08-15 21:11:35,332 (Elapsed: 00:02:11) Saved at: /data/users/fz920/expr/gpu_0_samples_300.npz
+2022-08-15 21:11:35,546 (Elapsed: 00:02:11) sampling time per batch: 0.214 sec
+2022-08-15 21:11:35,625 (Elapsed: 00:02:11) Saved at: /data/users/fz920/expr/gpu_0_samples_301.npz
+2022-08-15 21:11:35,838 (Elapsed: 00:02:11) sampling time per batch: 0.213 sec
+2022-08-15 21:11:35,917 (Elapsed: 00:02:11) Saved at: /data/users/fz920/expr/gpu_0_samples_302.npz
+2022-08-15 21:11:36,130 (Elapsed: 00:02:11) sampling time per batch: 0.214 sec
+2022-08-15 21:11:36,209 (Elapsed: 00:02:12) Saved at: /data/users/fz920/expr/gpu_0_samples_303.npz
+2022-08-15 21:11:36,423 (Elapsed: 00:02:12) sampling time per batch: 0.214 sec
+2022-08-15 21:11:36,503 (Elapsed: 00:02:12) Saved at: /data/users/fz920/expr/gpu_0_samples_304.npz
+2022-08-15 21:11:36,717 (Elapsed: 00:02:12) sampling time per batch: 0.214 sec
+2022-08-15 21:11:36,796 (Elapsed: 00:02:12) Saved at: /data/users/fz920/expr/gpu_0_samples_305.npz
+2022-08-15 21:11:37,010 (Elapsed: 00:02:12) sampling time per batch: 0.214 sec
+2022-08-15 21:11:37,091 (Elapsed: 00:02:12) Saved at: /data/users/fz920/expr/gpu_0_samples_306.npz
+2022-08-15 21:11:37,305 (Elapsed: 00:02:13) sampling time per batch: 0.214 sec
+2022-08-15 21:11:37,385 (Elapsed: 00:02:13) Saved at: /data/users/fz920/expr/gpu_0_samples_307.npz
+2022-08-15 21:11:37,599 (Elapsed: 00:02:13) sampling time per batch: 0.214 sec
+2022-08-15 21:11:37,678 (Elapsed: 00:02:13) Saved at: /data/users/fz920/expr/gpu_0_samples_308.npz
+2022-08-15 21:11:37,892 (Elapsed: 00:02:13) sampling time per batch: 0.213 sec
+2022-08-15 21:11:37,970 (Elapsed: 00:02:13) Saved at: /data/users/fz920/expr/gpu_0_samples_309.npz
+2022-08-15 21:11:38,184 (Elapsed: 00:02:14) sampling time per batch: 0.214 sec
+2022-08-15 21:11:38,264 (Elapsed: 00:02:14) Saved at: /data/users/fz920/expr/gpu_0_samples_310.npz
+2022-08-15 21:11:38,477 (Elapsed: 00:02:14) sampling time per batch: 0.214 sec
+2022-08-15 21:11:38,556 (Elapsed: 00:02:14) Saved at: /data/users/fz920/expr/gpu_0_samples_311.npz
+2022-08-15 21:11:38,769 (Elapsed: 00:02:14) sampling time per batch: 0.213 sec
+2022-08-15 21:11:38,890 (Elapsed: 00:02:14) Saved at: /data/users/fz920/expr/gpu_0_samples_312.npz
+2022-08-15 21:11:39,104 (Elapsed: 00:02:14) sampling time per batch: 0.214 sec
+2022-08-15 21:11:39,184 (Elapsed: 00:02:15) Saved at: /data/users/fz920/expr/gpu_0_samples_313.npz
+2022-08-15 21:11:39,398 (Elapsed: 00:02:15) sampling time per batch: 0.214 sec
+2022-08-15 21:11:39,478 (Elapsed: 00:02:15) Saved at: /data/users/fz920/expr/gpu_0_samples_314.npz
+2022-08-15 21:11:39,692 (Elapsed: 00:02:15) sampling time per batch: 0.213 sec
+2022-08-15 21:11:39,771 (Elapsed: 00:02:15) Saved at: /data/users/fz920/expr/gpu_0_samples_315.npz
+2022-08-15 21:11:39,985 (Elapsed: 00:02:15) sampling time per batch: 0.214 sec
+2022-08-15 21:11:40,064 (Elapsed: 00:02:15) Saved at: /data/users/fz920/expr/gpu_0_samples_316.npz
+2022-08-15 21:11:40,278 (Elapsed: 00:02:16) sampling time per batch: 0.214 sec
+2022-08-15 21:11:40,357 (Elapsed: 00:02:16) Saved at: /data/users/fz920/expr/gpu_0_samples_317.npz
+2022-08-15 21:11:40,571 (Elapsed: 00:02:16) sampling time per batch: 0.213 sec
+2022-08-15 21:11:40,650 (Elapsed: 00:02:16) Saved at: /data/users/fz920/expr/gpu_0_samples_318.npz
+2022-08-15 21:11:40,863 (Elapsed: 00:02:16) sampling time per batch: 0.214 sec
+2022-08-15 21:11:40,943 (Elapsed: 00:02:16) Saved at: /data/users/fz920/expr/gpu_0_samples_319.npz
+2022-08-15 21:11:41,156 (Elapsed: 00:02:16) sampling time per batch: 0.213 sec
+2022-08-15 21:11:41,236 (Elapsed: 00:02:17) Saved at: /data/users/fz920/expr/gpu_0_samples_320.npz
+2022-08-15 21:11:41,450 (Elapsed: 00:02:17) sampling time per batch: 0.214 sec
+2022-08-15 21:11:41,529 (Elapsed: 00:02:17) Saved at: /data/users/fz920/expr/gpu_0_samples_321.npz
+2022-08-15 21:11:41,743 (Elapsed: 00:02:17) sampling time per batch: 0.214 sec
+2022-08-15 21:11:41,821 (Elapsed: 00:02:17) Saved at: /data/users/fz920/expr/gpu_0_samples_322.npz
+2022-08-15 21:11:42,035 (Elapsed: 00:02:17) sampling time per batch: 0.213 sec
+2022-08-15 21:11:42,114 (Elapsed: 00:02:17) Saved at: /data/users/fz920/expr/gpu_0_samples_323.npz
+2022-08-15 21:11:42,327 (Elapsed: 00:02:18) sampling time per batch: 0.213 sec
+2022-08-15 21:11:42,406 (Elapsed: 00:02:18) Saved at: /data/users/fz920/expr/gpu_0_samples_324.npz
+2022-08-15 21:11:42,619 (Elapsed: 00:02:18) sampling time per batch: 0.214 sec
+2022-08-15 21:11:42,698 (Elapsed: 00:02:18) Saved at: /data/users/fz920/expr/gpu_0_samples_325.npz
+2022-08-15 21:11:42,911 (Elapsed: 00:02:18) sampling time per batch: 0.213 sec
+2022-08-15 21:11:42,989 (Elapsed: 00:02:18) Saved at: /data/users/fz920/expr/gpu_0_samples_326.npz
+2022-08-15 21:11:43,202 (Elapsed: 00:02:19) sampling time per batch: 0.213 sec
+2022-08-15 21:11:43,282 (Elapsed: 00:02:19) Saved at: /data/users/fz920/expr/gpu_0_samples_327.npz
+2022-08-15 21:11:43,496 (Elapsed: 00:02:19) sampling time per batch: 0.214 sec
+2022-08-15 21:11:43,574 (Elapsed: 00:02:19) Saved at: /data/users/fz920/expr/gpu_0_samples_328.npz
+2022-08-15 21:11:43,787 (Elapsed: 00:02:19) sampling time per batch: 0.213 sec
+2022-08-15 21:11:43,914 (Elapsed: 00:02:19) Saved at: /data/users/fz920/expr/gpu_0_samples_329.npz
+2022-08-15 21:11:44,127 (Elapsed: 00:02:19) sampling time per batch: 0.213 sec
+2022-08-15 21:11:44,206 (Elapsed: 00:02:20) Saved at: /data/users/fz920/expr/gpu_0_samples_330.npz
+2022-08-15 21:11:44,421 (Elapsed: 00:02:20) sampling time per batch: 0.215 sec
+2022-08-15 21:11:44,500 (Elapsed: 00:02:20) Saved at: /data/users/fz920/expr/gpu_0_samples_331.npz
+2022-08-15 21:11:44,714 (Elapsed: 00:02:20) sampling time per batch: 0.213 sec
+2022-08-15 21:11:44,793 (Elapsed: 00:02:20) Saved at: /data/users/fz920/expr/gpu_0_samples_332.npz
+2022-08-15 21:11:45,007 (Elapsed: 00:02:20) sampling time per batch: 0.214 sec
+2022-08-15 21:11:45,085 (Elapsed: 00:02:20) Saved at: /data/users/fz920/expr/gpu_0_samples_333.npz
+2022-08-15 21:11:45,299 (Elapsed: 00:02:21) sampling time per batch: 0.214 sec
+2022-08-15 21:11:45,378 (Elapsed: 00:02:21) Saved at: /data/users/fz920/expr/gpu_0_samples_334.npz
+2022-08-15 21:11:45,593 (Elapsed: 00:02:21) sampling time per batch: 0.214 sec
+2022-08-15 21:11:45,671 (Elapsed: 00:02:21) Saved at: /data/users/fz920/expr/gpu_0_samples_335.npz
+2022-08-15 21:11:45,885 (Elapsed: 00:02:21) sampling time per batch: 0.213 sec
+2022-08-15 21:11:45,963 (Elapsed: 00:02:21) Saved at: /data/users/fz920/expr/gpu_0_samples_336.npz
+2022-08-15 21:11:46,177 (Elapsed: 00:02:22) sampling time per batch: 0.214 sec
+2022-08-15 21:11:46,256 (Elapsed: 00:02:22) Saved at: /data/users/fz920/expr/gpu_0_samples_337.npz
+2022-08-15 21:11:46,469 (Elapsed: 00:02:22) sampling time per batch: 0.213 sec
+2022-08-15 21:11:46,548 (Elapsed: 00:02:22) Saved at: /data/users/fz920/expr/gpu_0_samples_338.npz
+2022-08-15 21:11:46,762 (Elapsed: 00:02:22) sampling time per batch: 0.214 sec
+2022-08-15 21:11:46,840 (Elapsed: 00:02:22) Saved at: /data/users/fz920/expr/gpu_0_samples_339.npz
+2022-08-15 21:11:47,054 (Elapsed: 00:02:22) sampling time per batch: 0.213 sec
+2022-08-15 21:11:47,132 (Elapsed: 00:02:22) Saved at: /data/users/fz920/expr/gpu_0_samples_340.npz
+2022-08-15 21:11:47,346 (Elapsed: 00:02:23) sampling time per batch: 0.213 sec
+2022-08-15 21:11:47,424 (Elapsed: 00:02:23) Saved at: /data/users/fz920/expr/gpu_0_samples_341.npz
+2022-08-15 21:11:47,638 (Elapsed: 00:02:23) sampling time per batch: 0.214 sec
+2022-08-15 21:11:47,717 (Elapsed: 00:02:23) Saved at: /data/users/fz920/expr/gpu_0_samples_342.npz
+2022-08-15 21:11:47,931 (Elapsed: 00:02:23) sampling time per batch: 0.214 sec
+2022-08-15 21:11:48,009 (Elapsed: 00:02:23) Saved at: /data/users/fz920/expr/gpu_0_samples_343.npz
+2022-08-15 21:11:48,223 (Elapsed: 00:02:24) sampling time per batch: 0.214 sec
+2022-08-15 21:11:48,301 (Elapsed: 00:02:24) Saved at: /data/users/fz920/expr/gpu_0_samples_344.npz
+2022-08-15 21:11:48,515 (Elapsed: 00:02:24) sampling time per batch: 0.213 sec
+2022-08-15 21:11:48,593 (Elapsed: 00:02:24) Saved at: /data/users/fz920/expr/gpu_0_samples_345.npz
+2022-08-15 21:11:48,807 (Elapsed: 00:02:24) sampling time per batch: 0.214 sec
+2022-08-15 21:11:48,929 (Elapsed: 00:02:24) Saved at: /data/users/fz920/expr/gpu_0_samples_346.npz
+2022-08-15 21:11:49,142 (Elapsed: 00:02:24) sampling time per batch: 0.214 sec
+2022-08-15 21:11:49,221 (Elapsed: 00:02:25) Saved at: /data/users/fz920/expr/gpu_0_samples_347.npz
+2022-08-15 21:11:49,435 (Elapsed: 00:02:25) sampling time per batch: 0.214 sec
+2022-08-15 21:11:49,515 (Elapsed: 00:02:25) Saved at: /data/users/fz920/expr/gpu_0_samples_348.npz
+2022-08-15 21:11:49,729 (Elapsed: 00:02:25) sampling time per batch: 0.214 sec
+2022-08-15 21:11:49,807 (Elapsed: 00:02:25) Saved at: /data/users/fz920/expr/gpu_0_samples_349.npz
+2022-08-15 21:11:50,021 (Elapsed: 00:02:25) sampling time per batch: 0.214 sec
+2022-08-15 21:11:50,099 (Elapsed: 00:02:25) Saved at: /data/users/fz920/expr/gpu_0_samples_350.npz
+2022-08-15 21:11:50,312 (Elapsed: 00:02:26) sampling time per batch: 0.213 sec
+2022-08-15 21:11:50,391 (Elapsed: 00:02:26) Saved at: /data/users/fz920/expr/gpu_0_samples_351.npz
+2022-08-15 21:11:50,604 (Elapsed: 00:02:26) sampling time per batch: 0.214 sec
+2022-08-15 21:11:50,683 (Elapsed: 00:02:26) Saved at: /data/users/fz920/expr/gpu_0_samples_352.npz
+2022-08-15 21:11:50,897 (Elapsed: 00:02:26) sampling time per batch: 0.214 sec
+2022-08-15 21:11:50,976 (Elapsed: 00:02:26) Saved at: /data/users/fz920/expr/gpu_0_samples_353.npz
+2022-08-15 21:11:51,191 (Elapsed: 00:02:27) sampling time per batch: 0.214 sec
+2022-08-15 21:11:51,272 (Elapsed: 00:02:27) Saved at: /data/users/fz920/expr/gpu_0_samples_354.npz
+2022-08-15 21:11:51,486 (Elapsed: 00:02:27) sampling time per batch: 0.214 sec
+2022-08-15 21:11:51,565 (Elapsed: 00:02:27) Saved at: /data/users/fz920/expr/gpu_0_samples_355.npz
+2022-08-15 21:11:51,779 (Elapsed: 00:02:27) sampling time per batch: 0.214 sec
+2022-08-15 21:11:51,858 (Elapsed: 00:02:27) Saved at: /data/users/fz920/expr/gpu_0_samples_356.npz
+2022-08-15 21:11:52,071 (Elapsed: 00:02:27) sampling time per batch: 0.213 sec
+2022-08-15 21:11:52,149 (Elapsed: 00:02:27) Saved at: /data/users/fz920/expr/gpu_0_samples_357.npz
+2022-08-15 21:11:52,363 (Elapsed: 00:02:28) sampling time per batch: 0.214 sec
+2022-08-15 21:11:52,442 (Elapsed: 00:02:28) Saved at: /data/users/fz920/expr/gpu_0_samples_358.npz
+2022-08-15 21:11:52,656 (Elapsed: 00:02:28) sampling time per batch: 0.214 sec
+2022-08-15 21:11:52,734 (Elapsed: 00:02:28) Saved at: /data/users/fz920/expr/gpu_0_samples_359.npz
+2022-08-15 21:11:52,948 (Elapsed: 00:02:28) sampling time per batch: 0.214 sec
+2022-08-15 21:11:53,026 (Elapsed: 00:02:28) Saved at: /data/users/fz920/expr/gpu_0_samples_360.npz
+2022-08-15 21:11:53,240 (Elapsed: 00:02:29) sampling time per batch: 0.214 sec
+2022-08-15 21:11:53,318 (Elapsed: 00:02:29) Saved at: /data/users/fz920/expr/gpu_0_samples_361.npz
+2022-08-15 21:11:53,532 (Elapsed: 00:02:29) sampling time per batch: 0.214 sec
+2022-08-15 21:11:53,610 (Elapsed: 00:02:29) Saved at: /data/users/fz920/expr/gpu_0_samples_362.npz
+2022-08-15 21:11:53,824 (Elapsed: 00:02:29) sampling time per batch: 0.214 sec
+2022-08-15 21:11:53,945 (Elapsed: 00:02:29) Saved at: /data/users/fz920/expr/gpu_0_samples_363.npz
+2022-08-15 21:11:54,159 (Elapsed: 00:02:29) sampling time per batch: 0.214 sec
+2022-08-15 21:11:54,237 (Elapsed: 00:02:30) Saved at: /data/users/fz920/expr/gpu_0_samples_364.npz
+2022-08-15 21:11:54,451 (Elapsed: 00:02:30) sampling time per batch: 0.214 sec
+2022-08-15 21:11:54,530 (Elapsed: 00:02:30) Saved at: /data/users/fz920/expr/gpu_0_samples_365.npz
+2022-08-15 21:11:54,744 (Elapsed: 00:02:30) sampling time per batch: 0.214 sec
+2022-08-15 21:11:54,822 (Elapsed: 00:02:30) Saved at: /data/users/fz920/expr/gpu_0_samples_366.npz
+2022-08-15 21:11:55,036 (Elapsed: 00:02:30) sampling time per batch: 0.214 sec
+2022-08-15 21:11:55,114 (Elapsed: 00:02:30) Saved at: /data/users/fz920/expr/gpu_0_samples_367.npz
+2022-08-15 21:11:55,328 (Elapsed: 00:02:31) sampling time per batch: 0.213 sec
+2022-08-15 21:11:55,406 (Elapsed: 00:02:31) Saved at: /data/users/fz920/expr/gpu_0_samples_368.npz
+2022-08-15 21:11:55,620 (Elapsed: 00:02:31) sampling time per batch: 0.214 sec
+2022-08-15 21:11:55,699 (Elapsed: 00:02:31) Saved at: /data/users/fz920/expr/gpu_0_samples_369.npz
+2022-08-15 21:11:55,913 (Elapsed: 00:02:31) sampling time per batch: 0.214 sec
+2022-08-15 21:11:55,992 (Elapsed: 00:02:31) Saved at: /data/users/fz920/expr/gpu_0_samples_370.npz
+2022-08-15 21:11:56,205 (Elapsed: 00:02:32) sampling time per batch: 0.214 sec
+2022-08-15 21:11:56,284 (Elapsed: 00:02:32) Saved at: /data/users/fz920/expr/gpu_0_samples_371.npz
+2022-08-15 21:11:56,498 (Elapsed: 00:02:32) sampling time per batch: 0.214 sec
+2022-08-15 21:11:56,578 (Elapsed: 00:02:32) Saved at: /data/users/fz920/expr/gpu_0_samples_372.npz
+2022-08-15 21:11:56,792 (Elapsed: 00:02:32) sampling time per batch: 0.214 sec
+2022-08-15 21:11:56,870 (Elapsed: 00:02:32) Saved at: /data/users/fz920/expr/gpu_0_samples_373.npz
+2022-08-15 21:11:57,084 (Elapsed: 00:02:32) sampling time per batch: 0.214 sec
+2022-08-15 21:11:57,163 (Elapsed: 00:02:32) Saved at: /data/users/fz920/expr/gpu_0_samples_374.npz
+2022-08-15 21:11:57,377 (Elapsed: 00:02:33) sampling time per batch: 0.214 sec
+2022-08-15 21:11:57,455 (Elapsed: 00:02:33) Saved at: /data/users/fz920/expr/gpu_0_samples_375.npz
+2022-08-15 21:11:57,669 (Elapsed: 00:02:33) sampling time per batch: 0.214 sec
+2022-08-15 21:11:57,747 (Elapsed: 00:02:33) Saved at: /data/users/fz920/expr/gpu_0_samples_376.npz
+2022-08-15 21:11:57,961 (Elapsed: 00:02:33) sampling time per batch: 0.214 sec
+2022-08-15 21:11:58,040 (Elapsed: 00:02:33) Saved at: /data/users/fz920/expr/gpu_0_samples_377.npz
+2022-08-15 21:11:58,254 (Elapsed: 00:02:34) sampling time per batch: 0.214 sec
+2022-08-15 21:11:58,333 (Elapsed: 00:02:34) Saved at: /data/users/fz920/expr/gpu_0_samples_378.npz
+2022-08-15 21:11:58,547 (Elapsed: 00:02:34) sampling time per batch: 0.214 sec
+2022-08-15 21:11:58,625 (Elapsed: 00:02:34) Saved at: /data/users/fz920/expr/gpu_0_samples_379.npz
+2022-08-15 21:11:58,839 (Elapsed: 00:02:34) sampling time per batch: 0.213 sec
+2022-08-15 21:11:58,964 (Elapsed: 00:02:34) Saved at: /data/users/fz920/expr/gpu_0_samples_380.npz
+2022-08-15 21:11:59,178 (Elapsed: 00:02:35) sampling time per batch: 0.213 sec
+2022-08-15 21:11:59,257 (Elapsed: 00:02:35) Saved at: /data/users/fz920/expr/gpu_0_samples_381.npz
+2022-08-15 21:11:59,471 (Elapsed: 00:02:35) sampling time per batch: 0.214 sec
+2022-08-15 21:11:59,551 (Elapsed: 00:02:35) Saved at: /data/users/fz920/expr/gpu_0_samples_382.npz
+2022-08-15 21:11:59,764 (Elapsed: 00:02:35) sampling time per batch: 0.213 sec
+2022-08-15 21:11:59,842 (Elapsed: 00:02:35) Saved at: /data/users/fz920/expr/gpu_0_samples_383.npz
+2022-08-15 21:12:00,056 (Elapsed: 00:02:35) sampling time per batch: 0.214 sec
+2022-08-15 21:12:00,134 (Elapsed: 00:02:35) Saved at: /data/users/fz920/expr/gpu_0_samples_384.npz
+2022-08-15 21:12:00,348 (Elapsed: 00:02:36) sampling time per batch: 0.214 sec
+2022-08-15 21:12:00,425 (Elapsed: 00:02:36) Saved at: /data/users/fz920/expr/gpu_0_samples_385.npz
+2022-08-15 21:12:00,639 (Elapsed: 00:02:36) sampling time per batch: 0.213 sec
+2022-08-15 21:12:00,718 (Elapsed: 00:02:36) Saved at: /data/users/fz920/expr/gpu_0_samples_386.npz
+2022-08-15 21:12:00,931 (Elapsed: 00:02:36) sampling time per batch: 0.213 sec
+2022-08-15 21:12:01,010 (Elapsed: 00:02:36) Saved at: /data/users/fz920/expr/gpu_0_samples_387.npz
+2022-08-15 21:12:01,225 (Elapsed: 00:02:37) sampling time per batch: 0.215 sec
+2022-08-15 21:12:01,303 (Elapsed: 00:02:37) Saved at: /data/users/fz920/expr/gpu_0_samples_388.npz
+2022-08-15 21:12:01,517 (Elapsed: 00:02:37) sampling time per batch: 0.213 sec
+2022-08-15 21:12:01,595 (Elapsed: 00:02:37) Saved at: /data/users/fz920/expr/gpu_0_samples_389.npz
+2022-08-15 21:12:01,809 (Elapsed: 00:02:37) sampling time per batch: 0.214 sec
+2022-08-15 21:12:01,887 (Elapsed: 00:02:37) Saved at: /data/users/fz920/expr/gpu_0_samples_390.npz
+2022-08-15 21:12:02,102 (Elapsed: 00:02:37) sampling time per batch: 0.215 sec
+2022-08-15 21:12:02,180 (Elapsed: 00:02:38) Saved at: /data/users/fz920/expr/gpu_0_samples_391.npz
+2022-08-15 21:12:02,394 (Elapsed: 00:02:38) sampling time per batch: 0.214 sec
+2022-08-15 21:12:02,472 (Elapsed: 00:02:38) Saved at: /data/users/fz920/expr/gpu_0_samples_392.npz
+2022-08-15 21:12:02,686 (Elapsed: 00:02:38) sampling time per batch: 0.214 sec
+2022-08-15 21:12:02,765 (Elapsed: 00:02:38) Saved at: /data/users/fz920/expr/gpu_0_samples_393.npz
+2022-08-15 21:12:02,978 (Elapsed: 00:02:38) sampling time per batch: 0.213 sec
+2022-08-15 21:12:03,056 (Elapsed: 00:02:38) Saved at: /data/users/fz920/expr/gpu_0_samples_394.npz
+2022-08-15 21:12:03,270 (Elapsed: 00:02:39) sampling time per batch: 0.214 sec
+2022-08-15 21:12:03,348 (Elapsed: 00:02:39) Saved at: /data/users/fz920/expr/gpu_0_samples_395.npz
+2022-08-15 21:12:03,561 (Elapsed: 00:02:39) sampling time per batch: 0.213 sec
+2022-08-15 21:12:03,639 (Elapsed: 00:02:39) Saved at: /data/users/fz920/expr/gpu_0_samples_396.npz
+2022-08-15 21:12:03,853 (Elapsed: 00:02:39) sampling time per batch: 0.214 sec
+2022-08-15 21:12:03,972 (Elapsed: 00:02:39) Saved at: /data/users/fz920/expr/gpu_0_samples_397.npz
+2022-08-15 21:12:04,187 (Elapsed: 00:02:40) sampling time per batch: 0.214 sec
+2022-08-15 21:12:04,265 (Elapsed: 00:02:40) Saved at: /data/users/fz920/expr/gpu_0_samples_398.npz
+2022-08-15 21:12:04,479 (Elapsed: 00:02:40) sampling time per batch: 0.214 sec
+2022-08-15 21:12:04,558 (Elapsed: 00:02:40) Saved at: /data/users/fz920/expr/gpu_0_samples_399.npz
+2022-08-15 21:12:04,772 (Elapsed: 00:02:40) sampling time per batch: 0.214 sec
+2022-08-15 21:12:04,852 (Elapsed: 00:02:40) Saved at: /data/users/fz920/expr/gpu_0_samples_400.npz
+2022-08-15 21:12:05,066 (Elapsed: 00:02:40) sampling time per batch: 0.214 sec
+2022-08-15 21:12:05,145 (Elapsed: 00:02:40) Saved at: /data/users/fz920/expr/gpu_0_samples_401.npz
+2022-08-15 21:12:05,359 (Elapsed: 00:02:41) sampling time per batch: 0.214 sec
+2022-08-15 21:12:05,437 (Elapsed: 00:02:41) Saved at: /data/users/fz920/expr/gpu_0_samples_402.npz
+2022-08-15 21:12:05,651 (Elapsed: 00:02:41) sampling time per batch: 0.214 sec
+2022-08-15 21:12:05,730 (Elapsed: 00:02:41) Saved at: /data/users/fz920/expr/gpu_0_samples_403.npz
+2022-08-15 21:12:05,944 (Elapsed: 00:02:41) sampling time per batch: 0.214 sec
+2022-08-15 21:12:06,022 (Elapsed: 00:02:41) Saved at: /data/users/fz920/expr/gpu_0_samples_404.npz
+2022-08-15 21:12:06,236 (Elapsed: 00:02:42) sampling time per batch: 0.214 sec
+2022-08-15 21:12:06,314 (Elapsed: 00:02:42) Saved at: /data/users/fz920/expr/gpu_0_samples_405.npz
+2022-08-15 21:12:06,529 (Elapsed: 00:02:42) sampling time per batch: 0.214 sec
+2022-08-15 21:12:06,607 (Elapsed: 00:02:42) Saved at: /data/users/fz920/expr/gpu_0_samples_406.npz
+2022-08-15 21:12:06,821 (Elapsed: 00:02:42) sampling time per batch: 0.213 sec
+2022-08-15 21:12:06,899 (Elapsed: 00:02:42) Saved at: /data/users/fz920/expr/gpu_0_samples_407.npz
+2022-08-15 21:12:07,113 (Elapsed: 00:02:42) sampling time per batch: 0.214 sec
+2022-08-15 21:12:07,192 (Elapsed: 00:02:43) Saved at: /data/users/fz920/expr/gpu_0_samples_408.npz
+2022-08-15 21:12:07,405 (Elapsed: 00:02:43) sampling time per batch: 0.214 sec
+2022-08-15 21:12:07,485 (Elapsed: 00:02:43) Saved at: /data/users/fz920/expr/gpu_0_samples_409.npz
+2022-08-15 21:12:07,699 (Elapsed: 00:02:43) sampling time per batch: 0.214 sec
+2022-08-15 21:12:07,778 (Elapsed: 00:02:43) Saved at: /data/users/fz920/expr/gpu_0_samples_410.npz
+2022-08-15 21:12:07,991 (Elapsed: 00:02:43) sampling time per batch: 0.214 sec
+2022-08-15 21:12:08,069 (Elapsed: 00:02:43) Saved at: /data/users/fz920/expr/gpu_0_samples_411.npz
+2022-08-15 21:12:08,283 (Elapsed: 00:02:44) sampling time per batch: 0.214 sec
+2022-08-15 21:12:08,364 (Elapsed: 00:02:44) Saved at: /data/users/fz920/expr/gpu_0_samples_412.npz
+2022-08-15 21:12:08,578 (Elapsed: 00:02:44) sampling time per batch: 0.214 sec
+2022-08-15 21:12:08,657 (Elapsed: 00:02:44) Saved at: /data/users/fz920/expr/gpu_0_samples_413.npz
+2022-08-15 21:12:08,871 (Elapsed: 00:02:44) sampling time per batch: 0.214 sec
+2022-08-15 21:12:08,992 (Elapsed: 00:02:44) Saved at: /data/users/fz920/expr/gpu_0_samples_414.npz
+2022-08-15 21:12:09,206 (Elapsed: 00:02:45) sampling time per batch: 0.214 sec
+2022-08-15 21:12:09,284 (Elapsed: 00:02:45) Saved at: /data/users/fz920/expr/gpu_0_samples_415.npz
+2022-08-15 21:12:09,498 (Elapsed: 00:02:45) sampling time per batch: 0.214 sec
+2022-08-15 21:12:09,581 (Elapsed: 00:02:45) Saved at: /data/users/fz920/expr/gpu_0_samples_416.npz
+2022-08-15 21:12:09,795 (Elapsed: 00:02:45) sampling time per batch: 0.214 sec
+2022-08-15 21:12:09,874 (Elapsed: 00:02:45) Saved at: /data/users/fz920/expr/gpu_0_samples_417.npz
+2022-08-15 21:12:10,088 (Elapsed: 00:02:45) sampling time per batch: 0.214 sec
+2022-08-15 21:12:10,167 (Elapsed: 00:02:45) Saved at: /data/users/fz920/expr/gpu_0_samples_418.npz
+2022-08-15 21:12:10,380 (Elapsed: 00:02:46) sampling time per batch: 0.214 sec
+2022-08-15 21:12:10,460 (Elapsed: 00:02:46) Saved at: /data/users/fz920/expr/gpu_0_samples_419.npz
+2022-08-15 21:12:10,674 (Elapsed: 00:02:46) sampling time per batch: 0.214 sec
+2022-08-15 21:12:10,753 (Elapsed: 00:02:46) Saved at: /data/users/fz920/expr/gpu_0_samples_420.npz
+2022-08-15 21:12:10,967 (Elapsed: 00:02:46) sampling time per batch: 0.214 sec
+2022-08-15 21:12:11,045 (Elapsed: 00:02:46) Saved at: /data/users/fz920/expr/gpu_0_samples_421.npz
+2022-08-15 21:12:11,259 (Elapsed: 00:02:47) sampling time per batch: 0.214 sec
+2022-08-15 21:12:11,337 (Elapsed: 00:02:47) Saved at: /data/users/fz920/expr/gpu_0_samples_422.npz
+2022-08-15 21:12:11,551 (Elapsed: 00:02:47) sampling time per batch: 0.214 sec
+2022-08-15 21:12:11,630 (Elapsed: 00:02:47) Saved at: /data/users/fz920/expr/gpu_0_samples_423.npz
+2022-08-15 21:12:11,844 (Elapsed: 00:02:47) sampling time per batch: 0.214 sec
+2022-08-15 21:12:11,923 (Elapsed: 00:02:47) Saved at: /data/users/fz920/expr/gpu_0_samples_424.npz
+2022-08-15 21:12:12,137 (Elapsed: 00:02:47) sampling time per batch: 0.214 sec
+2022-08-15 21:12:12,215 (Elapsed: 00:02:48) Saved at: /data/users/fz920/expr/gpu_0_samples_425.npz
+2022-08-15 21:12:12,429 (Elapsed: 00:02:48) sampling time per batch: 0.214 sec
+2022-08-15 21:12:12,508 (Elapsed: 00:02:48) Saved at: /data/users/fz920/expr/gpu_0_samples_426.npz
+2022-08-15 21:12:12,722 (Elapsed: 00:02:48) sampling time per batch: 0.214 sec
+2022-08-15 21:12:12,802 (Elapsed: 00:02:48) Saved at: /data/users/fz920/expr/gpu_0_samples_427.npz
+2022-08-15 21:12:13,016 (Elapsed: 00:02:48) sampling time per batch: 0.214 sec
+2022-08-15 21:12:13,094 (Elapsed: 00:02:48) Saved at: /data/users/fz920/expr/gpu_0_samples_428.npz
+2022-08-15 21:12:13,308 (Elapsed: 00:02:49) sampling time per batch: 0.214 sec
+2022-08-15 21:12:13,387 (Elapsed: 00:02:49) Saved at: /data/users/fz920/expr/gpu_0_samples_429.npz
+2022-08-15 21:12:13,601 (Elapsed: 00:02:49) sampling time per batch: 0.214 sec
+2022-08-15 21:12:13,679 (Elapsed: 00:02:49) Saved at: /data/users/fz920/expr/gpu_0_samples_430.npz
+2022-08-15 21:12:13,893 (Elapsed: 00:02:49) sampling time per batch: 0.214 sec
+2022-08-15 21:12:14,016 (Elapsed: 00:02:49) Saved at: /data/users/fz920/expr/gpu_0_samples_431.npz
+2022-08-15 21:12:14,230 (Elapsed: 00:02:50) sampling time per batch: 0.214 sec
+2022-08-15 21:12:14,309 (Elapsed: 00:02:50) Saved at: /data/users/fz920/expr/gpu_0_samples_432.npz
+2022-08-15 21:12:14,523 (Elapsed: 00:02:50) sampling time per batch: 0.214 sec
+2022-08-15 21:12:14,603 (Elapsed: 00:02:50) Saved at: /data/users/fz920/expr/gpu_0_samples_433.npz
+2022-08-15 21:12:14,817 (Elapsed: 00:02:50) sampling time per batch: 0.214 sec
+2022-08-15 21:12:14,895 (Elapsed: 00:02:50) Saved at: /data/users/fz920/expr/gpu_0_samples_434.npz
+2022-08-15 21:12:15,109 (Elapsed: 00:02:50) sampling time per batch: 0.214 sec
+2022-08-15 21:12:15,188 (Elapsed: 00:02:51) Saved at: /data/users/fz920/expr/gpu_0_samples_435.npz
+2022-08-15 21:12:15,402 (Elapsed: 00:02:51) sampling time per batch: 0.214 sec
+2022-08-15 21:12:15,480 (Elapsed: 00:02:51) Saved at: /data/users/fz920/expr/gpu_0_samples_436.npz
+2022-08-15 21:12:15,694 (Elapsed: 00:02:51) sampling time per batch: 0.214 sec
+2022-08-15 21:12:15,773 (Elapsed: 00:02:51) Saved at: /data/users/fz920/expr/gpu_0_samples_437.npz
+2022-08-15 21:12:15,987 (Elapsed: 00:02:51) sampling time per batch: 0.214 sec
+2022-08-15 21:12:16,065 (Elapsed: 00:02:51) Saved at: /data/users/fz920/expr/gpu_0_samples_438.npz
+2022-08-15 21:12:16,279 (Elapsed: 00:02:52) sampling time per batch: 0.214 sec
+2022-08-15 21:12:16,358 (Elapsed: 00:02:52) Saved at: /data/users/fz920/expr/gpu_0_samples_439.npz
+2022-08-15 21:12:16,572 (Elapsed: 00:02:52) sampling time per batch: 0.214 sec
+2022-08-15 21:12:16,651 (Elapsed: 00:02:52) Saved at: /data/users/fz920/expr/gpu_0_samples_440.npz
+2022-08-15 21:12:16,865 (Elapsed: 00:02:52) sampling time per batch: 0.214 sec
+2022-08-15 21:12:16,943 (Elapsed: 00:02:52) Saved at: /data/users/fz920/expr/gpu_0_samples_441.npz
+2022-08-15 21:12:17,158 (Elapsed: 00:02:52) sampling time per batch: 0.214 sec
+2022-08-15 21:12:17,237 (Elapsed: 00:02:53) Saved at: /data/users/fz920/expr/gpu_0_samples_442.npz
+2022-08-15 21:12:17,451 (Elapsed: 00:02:53) sampling time per batch: 0.214 sec
+2022-08-15 21:12:17,530 (Elapsed: 00:02:53) Saved at: /data/users/fz920/expr/gpu_0_samples_443.npz
+2022-08-15 21:12:17,744 (Elapsed: 00:02:53) sampling time per batch: 0.214 sec
+2022-08-15 21:12:17,822 (Elapsed: 00:02:53) Saved at: /data/users/fz920/expr/gpu_0_samples_444.npz
+2022-08-15 21:12:18,036 (Elapsed: 00:02:53) sampling time per batch: 0.214 sec
+2022-08-15 21:12:18,114 (Elapsed: 00:02:53) Saved at: /data/users/fz920/expr/gpu_0_samples_445.npz
+2022-08-15 21:12:18,328 (Elapsed: 00:02:54) sampling time per batch: 0.214 sec
+2022-08-15 21:12:18,407 (Elapsed: 00:02:54) Saved at: /data/users/fz920/expr/gpu_0_samples_446.npz
+2022-08-15 21:12:18,621 (Elapsed: 00:02:54) sampling time per batch: 0.214 sec
+2022-08-15 21:12:18,699 (Elapsed: 00:02:54) Saved at: /data/users/fz920/expr/gpu_0_samples_447.npz
+2022-08-15 21:12:18,913 (Elapsed: 00:02:54) sampling time per batch: 0.214 sec
+2022-08-15 21:12:19,035 (Elapsed: 00:02:54) Saved at: /data/users/fz920/expr/gpu_0_samples_448.npz
+2022-08-15 21:12:19,249 (Elapsed: 00:02:55) sampling time per batch: 0.214 sec
+2022-08-15 21:12:19,327 (Elapsed: 00:02:55) Saved at: /data/users/fz920/expr/gpu_0_samples_449.npz
+2022-08-15 21:12:19,541 (Elapsed: 00:02:55) sampling time per batch: 0.214 sec
+2022-08-15 21:12:19,620 (Elapsed: 00:02:55) Saved at: /data/users/fz920/expr/gpu_0_samples_450.npz
+2022-08-15 21:12:19,834 (Elapsed: 00:02:55) sampling time per batch: 0.214 sec
+2022-08-15 21:12:19,913 (Elapsed: 00:02:55) Saved at: /data/users/fz920/expr/gpu_0_samples_451.npz
+2022-08-15 21:12:20,127 (Elapsed: 00:02:55) sampling time per batch: 0.214 sec
+2022-08-15 21:12:20,206 (Elapsed: 00:02:56) Saved at: /data/users/fz920/expr/gpu_0_samples_452.npz
+2022-08-15 21:12:20,420 (Elapsed: 00:02:56) sampling time per batch: 0.214 sec
+2022-08-15 21:12:20,498 (Elapsed: 00:02:56) Saved at: /data/users/fz920/expr/gpu_0_samples_453.npz
+2022-08-15 21:12:20,712 (Elapsed: 00:02:56) sampling time per batch: 0.214 sec
+2022-08-15 21:12:20,791 (Elapsed: 00:02:56) Saved at: /data/users/fz920/expr/gpu_0_samples_454.npz
+2022-08-15 21:12:21,005 (Elapsed: 00:02:56) sampling time per batch: 0.214 sec
+2022-08-15 21:12:21,083 (Elapsed: 00:02:56) Saved at: /data/users/fz920/expr/gpu_0_samples_455.npz
+2022-08-15 21:12:21,297 (Elapsed: 00:02:57) sampling time per batch: 0.214 sec
+2022-08-15 21:12:21,375 (Elapsed: 00:02:57) Saved at: /data/users/fz920/expr/gpu_0_samples_456.npz
+2022-08-15 21:12:21,590 (Elapsed: 00:02:57) sampling time per batch: 0.214 sec
+2022-08-15 21:12:21,668 (Elapsed: 00:02:57) Saved at: /data/users/fz920/expr/gpu_0_samples_457.npz
+2022-08-15 21:12:21,881 (Elapsed: 00:02:57) sampling time per batch: 0.214 sec
+2022-08-15 21:12:21,960 (Elapsed: 00:02:57) Saved at: /data/users/fz920/expr/gpu_0_samples_458.npz
+2022-08-15 21:12:22,174 (Elapsed: 00:02:57) sampling time per batch: 0.214 sec
+2022-08-15 21:12:22,252 (Elapsed: 00:02:58) Saved at: /data/users/fz920/expr/gpu_0_samples_459.npz
+2022-08-15 21:12:22,466 (Elapsed: 00:02:58) sampling time per batch: 0.214 sec
+2022-08-15 21:12:22,545 (Elapsed: 00:02:58) Saved at: /data/users/fz920/expr/gpu_0_samples_460.npz
+2022-08-15 21:12:22,760 (Elapsed: 00:02:58) sampling time per batch: 0.214 sec
+2022-08-15 21:12:22,838 (Elapsed: 00:02:58) Saved at: /data/users/fz920/expr/gpu_0_samples_461.npz
+2022-08-15 21:12:23,052 (Elapsed: 00:02:58) sampling time per batch: 0.214 sec
+2022-08-15 21:12:23,130 (Elapsed: 00:02:58) Saved at: /data/users/fz920/expr/gpu_0_samples_462.npz
+2022-08-15 21:12:23,345 (Elapsed: 00:02:59) sampling time per batch: 0.214 sec
+2022-08-15 21:12:23,423 (Elapsed: 00:02:59) Saved at: /data/users/fz920/expr/gpu_0_samples_463.npz
+2022-08-15 21:12:23,637 (Elapsed: 00:02:59) sampling time per batch: 0.214 sec
+2022-08-15 21:12:23,715 (Elapsed: 00:02:59) Saved at: /data/users/fz920/expr/gpu_0_samples_464.npz
+2022-08-15 21:12:23,931 (Elapsed: 00:02:59) sampling time per batch: 0.215 sec
+2022-08-15 21:12:24,013 (Elapsed: 00:02:59) Saved at: /data/users/fz920/expr/gpu_0_samples_465.npz
+2022-08-15 21:12:24,227 (Elapsed: 00:03:00) sampling time per batch: 0.214 sec
+2022-08-15 21:12:24,306 (Elapsed: 00:03:00) Saved at: /data/users/fz920/expr/gpu_0_samples_466.npz
+2022-08-15 21:12:24,521 (Elapsed: 00:03:00) sampling time per batch: 0.214 sec
+2022-08-15 21:12:24,600 (Elapsed: 00:03:00) Saved at: /data/users/fz920/expr/gpu_0_samples_467.npz
+2022-08-15 21:12:24,814 (Elapsed: 00:03:00) sampling time per batch: 0.214 sec
+2022-08-15 21:12:24,892 (Elapsed: 00:03:00) Saved at: /data/users/fz920/expr/gpu_0_samples_468.npz
+2022-08-15 21:12:25,106 (Elapsed: 00:03:00) sampling time per batch: 0.214 sec
+2022-08-15 21:12:25,185 (Elapsed: 00:03:01) Saved at: /data/users/fz920/expr/gpu_0_samples_469.npz
+2022-08-15 21:12:25,399 (Elapsed: 00:03:01) sampling time per batch: 0.214 sec
+2022-08-15 21:12:25,478 (Elapsed: 00:03:01) Saved at: /data/users/fz920/expr/gpu_0_samples_470.npz
+2022-08-15 21:12:25,692 (Elapsed: 00:03:01) sampling time per batch: 0.214 sec
+2022-08-15 21:12:25,771 (Elapsed: 00:03:01) Saved at: /data/users/fz920/expr/gpu_0_samples_471.npz
+2022-08-15 21:12:25,985 (Elapsed: 00:03:01) sampling time per batch: 0.214 sec
+2022-08-15 21:12:26,063 (Elapsed: 00:03:01) Saved at: /data/users/fz920/expr/gpu_0_samples_472.npz
+2022-08-15 21:12:26,277 (Elapsed: 00:03:02) sampling time per batch: 0.214 sec
+2022-08-15 21:12:26,355 (Elapsed: 00:03:02) Saved at: /data/users/fz920/expr/gpu_0_samples_473.npz
+2022-08-15 21:12:26,570 (Elapsed: 00:03:02) sampling time per batch: 0.214 sec
+2022-08-15 21:12:26,648 (Elapsed: 00:03:02) Saved at: /data/users/fz920/expr/gpu_0_samples_474.npz
+2022-08-15 21:12:26,862 (Elapsed: 00:03:02) sampling time per batch: 0.214 sec
+2022-08-15 21:12:26,941 (Elapsed: 00:03:02) Saved at: /data/users/fz920/expr/gpu_0_samples_475.npz
+2022-08-15 21:12:27,155 (Elapsed: 00:03:02) sampling time per batch: 0.214 sec
+2022-08-15 21:12:27,234 (Elapsed: 00:03:03) Saved at: /data/users/fz920/expr/gpu_0_samples_476.npz
+2022-08-15 21:12:27,449 (Elapsed: 00:03:03) sampling time per batch: 0.214 sec
+2022-08-15 21:12:27,528 (Elapsed: 00:03:03) Saved at: /data/users/fz920/expr/gpu_0_samples_477.npz
+2022-08-15 21:12:27,742 (Elapsed: 00:03:03) sampling time per batch: 0.214 sec
+2022-08-15 21:12:27,820 (Elapsed: 00:03:03) Saved at: /data/users/fz920/expr/gpu_0_samples_478.npz
+2022-08-15 21:12:28,034 (Elapsed: 00:03:03) sampling time per batch: 0.214 sec
+2022-08-15 21:12:28,113 (Elapsed: 00:03:03) Saved at: /data/users/fz920/expr/gpu_0_samples_479.npz
+2022-08-15 21:12:28,328 (Elapsed: 00:03:04) sampling time per batch: 0.214 sec
+2022-08-15 21:12:28,407 (Elapsed: 00:03:04) Saved at: /data/users/fz920/expr/gpu_0_samples_480.npz
+2022-08-15 21:12:28,621 (Elapsed: 00:03:04) sampling time per batch: 0.214 sec
+2022-08-15 21:12:28,700 (Elapsed: 00:03:04) Saved at: /data/users/fz920/expr/gpu_0_samples_481.npz
+2022-08-15 21:12:28,914 (Elapsed: 00:03:04) sampling time per batch: 0.214 sec
+2022-08-15 21:12:28,994 (Elapsed: 00:03:04) Saved at: /data/users/fz920/expr/gpu_0_samples_482.npz
+2022-08-15 21:12:29,209 (Elapsed: 00:03:05) sampling time per batch: 0.214 sec
+2022-08-15 21:12:29,289 (Elapsed: 00:03:05) Saved at: /data/users/fz920/expr/gpu_0_samples_483.npz
+2022-08-15 21:12:29,504 (Elapsed: 00:03:05) sampling time per batch: 0.215 sec
+2022-08-15 21:12:29,584 (Elapsed: 00:03:05) Saved at: /data/users/fz920/expr/gpu_0_samples_484.npz
+2022-08-15 21:12:29,798 (Elapsed: 00:03:05) sampling time per batch: 0.214 sec
+2022-08-15 21:12:29,876 (Elapsed: 00:03:05) Saved at: /data/users/fz920/expr/gpu_0_samples_485.npz
+2022-08-15 21:12:30,090 (Elapsed: 00:03:05) sampling time per batch: 0.214 sec
+2022-08-15 21:12:30,169 (Elapsed: 00:03:05) Saved at: /data/users/fz920/expr/gpu_0_samples_486.npz
+2022-08-15 21:12:30,384 (Elapsed: 00:03:06) sampling time per batch: 0.215 sec
+2022-08-15 21:12:30,463 (Elapsed: 00:03:06) Saved at: /data/users/fz920/expr/gpu_0_samples_487.npz
+2022-08-15 21:12:30,678 (Elapsed: 00:03:06) sampling time per batch: 0.215 sec
+2022-08-15 21:12:30,756 (Elapsed: 00:03:06) Saved at: /data/users/fz920/expr/gpu_0_samples_488.npz
+2022-08-15 21:12:30,971 (Elapsed: 00:03:06) sampling time per batch: 0.215 sec
+2022-08-15 21:12:31,051 (Elapsed: 00:03:06) Saved at: /data/users/fz920/expr/gpu_0_samples_489.npz
+2022-08-15 21:12:31,266 (Elapsed: 00:03:07) sampling time per batch: 0.215 sec
+2022-08-15 21:12:31,345 (Elapsed: 00:03:07) Saved at: /data/users/fz920/expr/gpu_0_samples_490.npz
+2022-08-15 21:12:31,561 (Elapsed: 00:03:07) sampling time per batch: 0.215 sec
+2022-08-15 21:12:31,639 (Elapsed: 00:03:07) Saved at: /data/users/fz920/expr/gpu_0_samples_491.npz
+2022-08-15 21:12:31,854 (Elapsed: 00:03:07) sampling time per batch: 0.215 sec
+2022-08-15 21:12:31,932 (Elapsed: 00:03:07) Saved at: /data/users/fz920/expr/gpu_0_samples_492.npz
+2022-08-15 21:12:32,147 (Elapsed: 00:03:07) sampling time per batch: 0.215 sec
+2022-08-15 21:12:32,226 (Elapsed: 00:03:08) Saved at: /data/users/fz920/expr/gpu_0_samples_493.npz
+2022-08-15 21:12:32,441 (Elapsed: 00:03:08) sampling time per batch: 0.215 sec
+2022-08-15 21:12:32,519 (Elapsed: 00:03:08) Saved at: /data/users/fz920/expr/gpu_0_samples_494.npz
+2022-08-15 21:12:32,734 (Elapsed: 00:03:08) sampling time per batch: 0.215 sec
+2022-08-15 21:12:32,813 (Elapsed: 00:03:08) Saved at: /data/users/fz920/expr/gpu_0_samples_495.npz
+2022-08-15 21:12:33,028 (Elapsed: 00:03:08) sampling time per batch: 0.215 sec
+2022-08-15 21:12:33,106 (Elapsed: 00:03:08) Saved at: /data/users/fz920/expr/gpu_0_samples_496.npz
+2022-08-15 21:12:33,321 (Elapsed: 00:03:09) sampling time per batch: 0.215 sec
+2022-08-15 21:12:33,402 (Elapsed: 00:03:09) Saved at: /data/users/fz920/expr/gpu_0_samples_497.npz
+2022-08-15 21:12:33,617 (Elapsed: 00:03:09) sampling time per batch: 0.215 sec
+2022-08-15 21:12:33,696 (Elapsed: 00:03:09) Saved at: /data/users/fz920/expr/gpu_0_samples_498.npz
+2022-08-15 21:12:33,911 (Elapsed: 00:03:09) sampling time per batch: 0.215 sec
+2022-08-15 21:12:33,995 (Elapsed: 00:03:09) Saved at: /data/users/fz920/expr/gpu_0_samples_499.npz
