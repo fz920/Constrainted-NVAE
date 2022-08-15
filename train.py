@@ -117,7 +117,7 @@ def main(args):
             logging.info('valid bpd log p %f', valid_neg_log_p * bpd_coeff)
 
             # Add logging information for the KL distance
-            logging.info('KL distance %f', kl_vals.item())
+            logging.info('KL distance %f', torch.sum(kl_vals).item())
 
             writer.add_scalar('val/neg_log_p', valid_neg_log_p, epoch)
             writer.add_scalar('val/nelbo', valid_nelbo, epoch)
