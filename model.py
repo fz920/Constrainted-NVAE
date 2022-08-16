@@ -400,22 +400,32 @@ class AutoEncoder(nn.Module):
                     mu_q1, log_sig_q1 = torch.chunk(param, 2, dim=1)
 
                     # Constrained algorithm
-                    C = 20
+                    C = 50
 
                     alpha = (mu_q1-mu_p)/torch.exp(log_sig_p)
                     gamma = 2 * (log_sig_q1-log_sig_p)
 
-                    torch.clamp_(gamma, min=torch.tensor(0.001).cuda()) # Make sure that gamma is non-negative
+                    torch.clamp_(gamma, min=torch.tensor(0.001).to(device)) # Make sure that gamma is non-negative
 
                     l2_alpha = torch.mean(torch.sum(alpha**2, dim=1))   # Compute l2 of alpha
                     l1_gamma = torch.mean(torch.sum(torch.abs(gamma), dim=1)) # Compute l1 of gamma
                     c_alpha = torch.min(torch.tensor(1).cuda(), torch.sqrt(2*C/l2_alpha))
-                    
+
                     alpha_bound = torch.sqrt(2*C/l2_alpha)
                     gamma_bound = (2*C-c_alpha**2*l2_alpha)/l1_gamma
 
-                    alpha1 = torch.clamp(alpha, max=alpha_bound, min=-alpha_bound)  # Clip alpha(x)
-                    gamma1 = torch.clamp(gamma, max=gamma_bound, min=-gamma_bound) # Clip gamma(x)
+                    # Clip alpha and gamma to a l2 norm ball
+                    reduc_ind = list(range(1, len(alpha.shape)))
+                    avoid_zero_div = torch.tensor(1e-12).cuda()
+                    alpha_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(alpha), reduc_ind, keepdims=True)))
+
+                    alpha_factor = torch.min(torch.tensor(1).cuda(), torch.div(alpha_bound, alpha_norm))
+                    alpha1 = alpha * alpha_factor # Clip alpha
+
+                    gamma_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(gamma), reduc_ind, keepdims=True)))
+
+                    gamma_factor = torch.min(torch.tensor(1).cuda(), torch.div(gamma_bound, gamma_norm))
+                    gamma1 = gamma * gamma_factor # Clip gamma
                     
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
