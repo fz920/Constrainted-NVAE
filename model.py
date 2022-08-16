@@ -415,18 +415,19 @@ class AutoEncoder(nn.Module):
                     gamma_bound = (2*C-c_alpha**2*l2_alpha)/l1_gamma
 
                     # Clip alpha and gamma to a l2 norm ball
-                    reduc_ind = list(range(1, len(alpha.shape)))
+                    reduc_ind_alpha = list(range(1, len(alpha.shape)))
                     avoid_zero_div = torch.tensor(1e-12).cuda()
-                    alpha_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(alpha), reduc_ind, keepdims=True)))
+                    alpha_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(alpha), reduc_ind_alpha, keepdims=True)))
 
                     alpha_factor = torch.min(torch.tensor(1).cuda(), torch.div(alpha_bound, alpha_norm))
                     alpha1 = alpha * alpha_factor # Clip alpha
 
-                    gamma_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(gamma), reduc_ind, keepdims=True)))
+                    reduc_ind_gamma = list(range(1, len(gamma.shape)))
+                    gamma_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(gamma), reduc_ind_gamma, keepdims=True)))
 
                     gamma_factor = torch.min(torch.tensor(1).cuda(), torch.div(gamma_bound, gamma_norm))
                     gamma1 = gamma * gamma_factor # Clip gamma
-                    
+
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
 
