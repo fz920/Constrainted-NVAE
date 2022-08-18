@@ -432,8 +432,8 @@ class AutoEncoder(nn.Module):
                     log_sig_q = log_sig_p + gamma1 / 2
 
                     dist = Normal(mu_p + mu_q, log_sig_p + log_sig_q) if self.res_dist else Normal(mu_q, log_sig_q)
-                    print(dist)
                     z, _ = dist.sample()
+                    print(z)
                     log_q_conv = dist.log_p(z)
                     
                     # apply NF
