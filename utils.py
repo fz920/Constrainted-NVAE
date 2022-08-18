@@ -242,7 +242,6 @@ def reconstruction_loss(decoder, x, crop=False):
     from distributions import Normal, DiscMixLogistic
     
     recon = decoder.log_prob(x)
-    print(decoder.log_prob(x))
     if crop:
         recon = recon[:, :, 2:30, 2:30]
     
