@@ -449,7 +449,7 @@ class AutoEncoder(nn.Module):
                     all_p.append(dist)
                     all_log_p.append(log_p_conv)
 
-                print(s)
+                #print(s)
                 # 'combiner_dec'
                 s = cell(s, z)          # s goes to nan after some iterations
                 idx_dec += 1
