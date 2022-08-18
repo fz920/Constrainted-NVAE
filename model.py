@@ -387,7 +387,6 @@ class AutoEncoder(nn.Module):
         s = self.prior_ftr0.unsqueeze(0)
         batch_size = z.size(0)
         s = s.expand(batch_size, -1, -1, -1)
-        i = 0
         for cell in self.dec_tower:
             if cell.cell_type == 'combiner_dec':
                 if idx_dec > 0:
@@ -432,6 +431,9 @@ class AutoEncoder(nn.Module):
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
 
+                    print(mu_q)
+                    print(log_sig_q)
+
                     dist = Normal(mu_p + mu_q, log_sig_p + log_sig_q) if self.res_dist else Normal(mu_q, log_sig_q)
                     z, _ = dist.sample()
                     log_q_conv = dist.log_p(z)
@@ -449,13 +451,9 @@ class AutoEncoder(nn.Module):
                     log_p_conv = dist.log_p(z)
                     all_p.append(dist)
                     all_log_p.append(log_p_conv)
-                
-                if i == 0:
-                    print(s)
-                i += 1
 
                 # 'combiner_dec'
-                s = cell(s, z)
+                s = cell(s, z)          # s goes to nan after some iterations
                 idx_dec += 1
             else:
                 s = cell(s)
