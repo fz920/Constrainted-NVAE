@@ -189,7 +189,7 @@ def train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_it
             else:
                 wdn_coeff = args.weight_decay_norm
 
-            loss += norm_loss * wdn_coeff + bn_loss * wdn_coeff
+            loss += bn_loss * wdn_coeff
 
         grad_scalar.scale(loss).backward()
         utils.average_gradients(model.parameters(), args.distributed)

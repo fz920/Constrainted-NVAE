@@ -14,7 +14,7 @@ from utils import one_hot
 
 @torch.jit.script
 def soft_clamp5(x: torch.Tensor):
-    return x.div(5.).tanh_().mul(5.)    #  5. * torch.tanh(x / 5.) <--> soft differentiable clamp between [-5, 5]
+    return x    #  5. * torch.tanh(x / 5.) <--> soft differentiable clamp between [-5, 5]
 
 
 @torch.jit.script

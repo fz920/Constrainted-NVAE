@@ -400,7 +400,7 @@ class AutoEncoder(nn.Module):
                     mu_q1, log_sig_q1 = torch.chunk(param, 2, dim=1)
 
                     # Constrained algorithm
-                    C = 50
+                    C = 100
 
                     alpha = (mu_q1-mu_p)/torch.exp(log_sig_p)
                     gamma = 2 * (log_sig_q1-log_sig_p)
@@ -434,6 +434,7 @@ class AutoEncoder(nn.Module):
                     dist = Normal(mu_p + mu_q, log_sig_p + log_sig_q) if self.res_dist else Normal(mu_q, log_sig_q)
                     z, _ = dist.sample()
                     log_q_conv = dist.log_p(z)
+                    
                     # apply NF
                     for n in range(self.num_flows):
                         z, log_det = self.nf_cells[nf_offset + n](z, ftr)
