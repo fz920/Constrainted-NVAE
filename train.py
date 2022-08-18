@@ -176,7 +176,7 @@ def train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_it
 
             recon_loss = utils.reconstruction_loss(output, x, crop=model.crop_output)
             balanced_kl, kl_coeffs, kl_vals = utils.kl_balancer(kl_all, kl_coeff, kl_balance=True, alpha_i=alpha_i)
-
+            print(recon_loss)
             nelbo_batch = recon_loss
             loss = torch.mean(nelbo_batch)
             norm_loss = model.spectral_norm_parallel()
