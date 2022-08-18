@@ -431,9 +431,6 @@ class AutoEncoder(nn.Module):
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
 
-                    print(mu_q)
-                    print(log_sig_q)
-
                     dist = Normal(mu_p + mu_q, log_sig_p + log_sig_q) if self.res_dist else Normal(mu_q, log_sig_q)
                     z, _ = dist.sample()
                     log_q_conv = dist.log_p(z)
@@ -452,6 +449,7 @@ class AutoEncoder(nn.Module):
                     all_p.append(dist)
                     all_log_p.append(log_p_conv)
 
+                print(s)
                 # 'combiner_dec'
                 s = cell(s, z)          # s goes to nan after some iterations
                 idx_dec += 1
