@@ -170,7 +170,6 @@ def train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_it
         with autocast():
             logits, log_q, log_p, kl_all, kl_diag = model(x)
 
-            print(logits)
             output = model.decoder_output(logits)
             kl_coeff = utils.kl_coeff(global_step, args.kl_anneal_portion * args.num_total_iter,
                                       args.kl_const_portion * args.num_total_iter, args.kl_const_coeff)
