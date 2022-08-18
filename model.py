@@ -434,7 +434,6 @@ class AutoEncoder(nn.Module):
                     dist = Normal(mu_p + mu_q, log_sig_p + log_sig_q) if self.res_dist else Normal(mu_q, log_sig_q)
                     z, _ = dist.sample()
                     log_q_conv = dist.log_p(z)
-                    print(log_q_conv)
                     
                     # apply NF
                     for n in range(self.num_flows):
@@ -452,6 +451,7 @@ class AutoEncoder(nn.Module):
 
                 # 'combiner_dec'
                 s = cell(s, z)
+                print(s)
                 idx_dec += 1
             else:
                 s = cell(s)
