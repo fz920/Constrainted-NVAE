@@ -448,10 +448,9 @@ class AutoEncoder(nn.Module):
                     log_p_conv = dist.log_p(z)
                     all_p.append(dist)
                     all_log_p.append(log_p_conv)
-
+                print(s)
                 # 'combiner_dec'
                 s = cell(s, z)
-                print(s)
                 idx_dec += 1
             else:
                 s = cell(s)
