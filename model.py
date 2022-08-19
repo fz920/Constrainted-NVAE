@@ -405,7 +405,7 @@ class AutoEncoder(nn.Module):
                     alpha = (mu_q1-mu_p)/torch.exp(log_sig_p)
                     gamma = 2 * (log_sig_q1-log_sig_p)
 
-                    torch.clamp_(gamma, max=torch.tensor(-0.000001).cuda()) # Make sure that gamma is non-negative
+                    torch.clamp_(gamma, max=torch.tensor(-0.000001).cuda()) # Make sure that gamma is non-positive
 
                     l2_alpha = torch.mean(torch.sum(alpha**2, dim=1))   # Compute l2 of alpha
                     l1_gamma = torch.mean(torch.sum(torch.abs(gamma), dim=1)) # Compute l1 of gamma
