@@ -148,6 +148,13 @@ def main(args):
     valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=1000, args=args, logging=logging)
     logging.info('final valid nelbo %f', valid_nelbo)
     logging.info('final valid neg log p %f', valid_neg_log_p)
+
+    logging.info('reconstruction loss train %f', reconstruction_loss_train)
+    logging.info('reconstruction loss test %f', reconstruction_loss_test)
+    logging.info('kl loss train %f', kl_loss_train)
+    logging.info('final valid neg log p %f', kl_loss_test)
+
+
     writer.add_scalar('val/neg_log_p', valid_neg_log_p, epoch + 1)
     writer.add_scalar('val/nelbo', valid_nelbo, epoch + 1)
     writer.add_scalar('val/bpd_log_p', valid_neg_log_p * bpd_coeff, epoch + 1)
