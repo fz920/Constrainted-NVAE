@@ -79,7 +79,6 @@ def main(args):
     else:
         global_step, init_epoch = 0, 0
 
-
     reconstruction_loss_train = []
     reconstruction_loss_test = []
     kl_loss_train = []
@@ -154,10 +153,10 @@ def main(args):
     writer.add_scalar('val/bpd_log_p', valid_neg_log_p * bpd_coeff, epoch + 1)
     writer.add_scalar('val/bpd_elbo', valid_nelbo * bpd_coeff, epoch + 1)
 
-    writer.add_scalar('reconstruction loss train', valid_nelbo * bpd_coeff, epoch + 1)
-    writer.add_scalar('reconstruction loss test', valid_nelbo * bpd_coeff, epoch + 1)
-    writer.add_scalar('kl loss train', valid_nelbo * bpd_coeff, epoch + 1)
-    writer.add_scalar('kl loss test', valid_nelbo * bpd_coeff, epoch + 1)
+    writer.add_scalar('reconstruction loss train', reconstruction_loss_train)
+    writer.add_scalar('reconstruction loss test', reconstruction_loss_test)
+    writer.add_scalar('kl loss train', kl_loss_train)
+    writer.add_scalar('kl loss test', kl_loss_test)
 
     writer.close()
 
