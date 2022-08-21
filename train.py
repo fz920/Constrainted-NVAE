@@ -144,6 +144,12 @@ def main(args):
                             'args': args, 'arch_instance': arch_instance, 'scheduler': cnn_scheduler.state_dict(),
                             'grad_scalar': grad_scalar.state_dict()}, checkpoint_file)
 
+        if epoch == args.epochs-1:
+                logging.info('reconstruction loss train %f', reconstruction_loss_train)
+                logging.info('reconstruction loss test %f', reconstruction_loss_test)
+                logging.info('kl loss train %f', kl_loss_train)
+                logging.info('final valid neg log p %f', kl_loss_test)
+
     # Final validation
     valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=1000, args=args, logging=logging)
     logging.info('final valid nelbo %f', valid_nelbo)
