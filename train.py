@@ -79,6 +79,11 @@ def main(args):
     else:
         global_step, init_epoch = 0, 0
 
+
+    reconstruction_loss_train = []
+    reconstruction_loss_test = []
+    kl_loss_train = []
+    kl_loss_test = []
     for epoch in range(init_epoch, args.epochs):
         # update lrs.
         if args.distributed:
@@ -92,7 +97,11 @@ def main(args):
         logging.info('epoch %d', epoch)
 
         # Training.
-        train_nelbo, global_step, kl_vals = train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_iters, writer, logging)
+        train_nelbo, global_step, kl_vals, recon_loss = train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_iters, writer, logging)
+        
+        reconstruction_loss_train.append(recon_loss)
+        kl_loss_train.append(kl_vals)
+        
         logging.info('train_nelbo %f', train_nelbo)
         writer.add_scalar('train/nelbo', train_nelbo, global_step)
 
@@ -110,7 +119,10 @@ def main(args):
                     output_tiled = utils.tile_image(output_img, n)
                     writer.add_image('generated_%0.1f' % t, output_tiled, global_step)
 
-            valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=10, args=args, logging=logging)
+            valid_neg_log_p, valid_nelbo, kl_vals, recon_loss = test(valid_queue, model, num_samples=10, args=args, logging=logging)
+            reconstruction_loss_test.append(recon_loss)
+            kl_loss_test.append(kl_vals)
+
             logging.info('valid_nelbo %f', valid_nelbo)
             logging.info('valid neg log p %f', valid_neg_log_p)
             logging.info('valid bpd elbo %f', valid_nelbo * bpd_coeff)
@@ -141,6 +153,12 @@ def main(args):
     writer.add_scalar('val/nelbo', valid_nelbo, epoch + 1)
     writer.add_scalar('val/bpd_log_p', valid_neg_log_p * bpd_coeff, epoch + 1)
     writer.add_scalar('val/bpd_elbo', valid_nelbo * bpd_coeff, epoch + 1)
+
+    writer.add_scalar('reconstruction loss train', valid_nelbo * bpd_coeff, epoch + 1)
+    writer.add_scalar('reconstruction loss test', valid_nelbo * bpd_coeff, epoch + 1)
+    writer.add_scalar('kl loss train', valid_nelbo * bpd_coeff, epoch + 1)
+    writer.add_scalar('kl loss test', valid_nelbo * bpd_coeff, epoch + 1)
+
     writer.close()
 
 
@@ -236,7 +254,7 @@ def train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_it
         global_step += 1
 
     utils.average_tensor(nelbo.avg, args.distributed)
-    return nelbo.avg, global_step, kl_vals
+    return nelbo.avg, global_step, kl_vals, recon_loss
 
 
 def test(valid_queue, model, num_samples, args, logging):
@@ -258,7 +276,7 @@ def test(valid_queue, model, num_samples, args, logging):
                 logits, log_q, log_p, kl_all, _ = model(x)
                 output = model.decoder_output(logits)
                 recon_loss = utils.reconstruction_loss(output, x, crop=model.crop_output)
-                balanced_kl, _, _ = utils.kl_balancer(kl_all, kl_balance=False)
+                balanced_kl, _, kl_vals = utils.kl_balancer(kl_all, kl_balance=False)
                 nelbo_batch = recon_loss + balanced_kl
                 nelbo.append(nelbo_batch)
                 log_iw.append(utils.log_iw(output, x, log_q, log_p, crop=model.crop_output))
@@ -275,7 +293,7 @@ def test(valid_queue, model, num_samples, args, logging):
         # block to sync
         dist.barrier()
     logging.info('val, step: %d, NELBO: %f, neg Log p %f', step, nelbo_avg.avg, neg_log_p_avg.avg)
-    return neg_log_p_avg.avg, nelbo_avg.avg
+    return neg_log_p_avg.avg, nelbo_avg.avg, kl_vals, recon_loss
 
 
 def create_generator_vae(model, batch_size, num_total_samples):
