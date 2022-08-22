@@ -101,7 +101,7 @@ def main(args):
 
         reconstruction_loss_train.append(torch.mean(recon_loss).item())
         kl_loss_train.append(torch.mean(kl_vals).item())
-   
+
         logging.info('train_nelbo %f', train_nelbo)
         writer.add_scalar('train/nelbo', train_nelbo, global_step)
 
