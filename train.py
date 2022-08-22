@@ -147,7 +147,7 @@ def main(args):
 
         if epoch == args.epochs-1:
             plt.figure(1, figsize=(8, 6), dpi=80)
-            xrange1 = [i for i in range(args.epoches)]
+            xrange1 = [i for i in range(args.epochs)]
             plt.plot(xrange1, reconstruction_loss_train, label='training reconstruction loss')
             plt.plot(xrange1, reconstruction_loss_test, label='validation reconstruction loss')
             plt.xlabel('epochs')
@@ -156,7 +156,7 @@ def main(args):
             plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-22/reconstuction_loss.pdf')
 
             plt.figure(2, figsize=(8, 6), dpi=80)
-            xrange1 = [i for i in range(args.epoches)]
+            xrange1 = [i for i in range(args.epochs)]
             plt.plot(xrange1, kl_loss_train, label='training kl loss')
             plt.plot(xrange1, kl_loss_test, label='validation kl loss')
             plt.xlabel('epochs')
