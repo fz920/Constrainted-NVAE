@@ -100,7 +100,7 @@ def main(args):
 
         reconstruction_loss_train.append(torch.mean(recon_loss).item())
         kl_loss_train.append(torch.mean(kl_vals).item())
-
+   
         logging.info('train_nelbo %f', train_nelbo)
         writer.add_scalar('train/nelbo', train_nelbo, global_step)
 
@@ -144,33 +144,28 @@ def main(args):
                             'args': args, 'arch_instance': arch_instance, 'scheduler': cnn_scheduler.state_dict(),
                             'grad_scalar': grad_scalar.state_dict()}, checkpoint_file)
 
-        if epoch == args.epochs-1:
-            logging.info('reconstruction loss train %f', reconstruction_loss_train)
-            logging.info('reconstruction loss test %f', reconstruction_loss_test)
-            logging.info('kl loss train %f', kl_loss_train)
-            logging.info('final valid neg log p %f', kl_loss_test)
+        #if epoch == args.epochs-1:
+            #logging.info('reconstruction loss train %f', reconstruction_loss_train)
+            #logging.info('reconstruction loss test %f', reconstruction_loss_test)
+            #logging.info('kl loss train %f', kl_loss_train)
+            #logging.info('final valid neg log p %f', kl_loss_test)
 
     # Final validation
     valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=1000, args=args, logging=logging)
     logging.info('final valid nelbo %f', valid_nelbo)
     logging.info('final valid neg log p %f', valid_neg_log_p)
 
-    logging.info('reconstruction loss train %f', reconstruction_loss_train)
-    logging.info('reconstruction loss test %f', reconstruction_loss_test)
-    logging.info('kl loss train %f', kl_loss_train)
-    logging.info('final valid neg log p %f', kl_loss_test)
+    for i in range(args.epochs):
+        logging.info('reconstruction loss train %f', reconstruction_loss_train[i])
+        logging.info('reconstruction loss test %f', reconstruction_loss_test[i])
+        logging.info('kl loss train %f', kl_loss_train[i])
+        logging.info('final valid neg log p %f', kl_loss_test[i])
 
 
     writer.add_scalar('val/neg_log_p', valid_neg_log_p, epoch + 1)
     writer.add_scalar('val/nelbo', valid_nelbo, epoch + 1)
     writer.add_scalar('val/bpd_log_p', valid_neg_log_p * bpd_coeff, epoch + 1)
     writer.add_scalar('val/bpd_elbo', valid_nelbo * bpd_coeff, epoch + 1)
-
-    writer.add_scalar('reconstruction loss train', reconstruction_loss_train)
-    writer.add_scalar('reconstruction loss test', reconstruction_loss_test)
-    writer.add_scalar('kl loss train', kl_loss_train)
-    writer.add_scalar('kl loss test', kl_loss_test)
-
     writer.close()
 
 
