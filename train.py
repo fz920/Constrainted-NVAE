@@ -10,6 +10,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 import os
+import matplotlib.pyplot as plt
 
 import torch.distributed as dist
 from torch.multiprocessing import Process
@@ -145,11 +146,23 @@ def main(args):
                             'grad_scalar': grad_scalar.state_dict()}, checkpoint_file)
 
         if epoch == args.epochs-1:
-            for i in range(args.epochs):
-                logging.info('reconstruction loss train %f', reconstruction_loss_train[i])
-                logging.info('reconstruction loss test %f', reconstruction_loss_test[i])
-                logging.info('kl loss train %f', kl_loss_train[i])
-                logging.info('kl loss test %f', kl_loss_test[i])
+            plt.figure(1, figsize=(8, 6), dpi=80)
+            xrange1 = [i for i in range(args.epoches)]
+            plt.plot(xrange1, reconstruction_loss_train, label='training reconstruction loss')
+            plt.plot(xrange1, reconstruction_loss_test, label='validation reconstruction loss')
+            plt.xlabel('epochs')
+            plt.ylabel('loss')
+            plt.legend()
+            plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-22/reconstuction_loss.pdf')
+
+            plt.figure(2, figsize=(8, 6), dpi=80)
+            xrange1 = [i for i in range(args.epoches)]
+            plt.plot(xrange1, kl_loss_train, label='training kl loss')
+            plt.plot(xrange1, kl_loss_test, label='validation kl loss')
+            plt.xlabel('epochs')
+            plt.ylabel('loss')
+            plt.legend()
+            plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-22/kl_loss.pdf')
 
     # Final validation
     valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=1000, args=args, logging=logging)
