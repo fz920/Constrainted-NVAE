@@ -97,10 +97,10 @@ def main(args):
 
         # Training.
         train_nelbo, global_step, kl_vals, recon_loss = train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_iters, writer, logging)
-        
-        reconstruction_loss_train.append(recon_loss)
-        kl_loss_train.append(kl_vals)
-        
+
+        reconstruction_loss_train.append(torch.mean(recon_loss).item())
+        kl_loss_train.append(torch.mean(kl_vals).item())
+
         logging.info('train_nelbo %f', train_nelbo)
         writer.add_scalar('train/nelbo', train_nelbo, global_step)
 
@@ -119,8 +119,8 @@ def main(args):
                     writer.add_image('generated_%0.1f' % t, output_tiled, global_step)
 
             valid_neg_log_p, valid_nelbo, kl_vals, recon_loss = test(valid_queue, model, num_samples=10, args=args, logging=logging)
-            reconstruction_loss_test.append(recon_loss)
-            kl_loss_test.append(kl_vals)
+            reconstruction_loss_test.append(torch.mean(recon_loss).item())
+            kl_loss_test.append(torch.mean(kl_vals).item())
 
             logging.info('valid_nelbo %f', valid_nelbo)
             logging.info('valid neg log p %f', valid_neg_log_p)
@@ -145,10 +145,10 @@ def main(args):
                             'grad_scalar': grad_scalar.state_dict()}, checkpoint_file)
 
         if epoch == args.epochs-1:
-                logging.info('reconstruction loss train %f', reconstruction_loss_train)
-                logging.info('reconstruction loss test %f', reconstruction_loss_test)
-                logging.info('kl loss train %f', kl_loss_train)
-                logging.info('final valid neg log p %f', kl_loss_test)
+            logging.info('reconstruction loss train %f', reconstruction_loss_train)
+            logging.info('reconstruction loss test %f', reconstruction_loss_test)
+            logging.info('kl loss train %f', kl_loss_train)
+            logging.info('final valid neg log p %f', kl_loss_test)
 
     # Final validation
     valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=1000, args=args, logging=logging)
