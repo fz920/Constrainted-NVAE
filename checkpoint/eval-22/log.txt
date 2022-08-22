@@ -1,0 +1,252 @@
+2022-08-22 21:15:51,426 (Elapsed: 00:00:04) args = Namespace(ada_groups=False, arch_instance='res_mbconv', batch_size=64, cont_training=False, data='/data/users/fz920/data/cifar10', dataset='cifar10', distributed=True, epochs=10, fast_adamax=True, global_rank=0, kl_anneal_portion=0.3, kl_const_coeff=0.0001, kl_const_portion=0.0001, learning_rate=0.005, learning_rate_min=0.0001, local_rank=0, master_address='127.0.0.1', min_groups_per_scale=1, node_rank=0, num_cell_per_cond_dec=2, num_cell_per_cond_enc=2, num_channels_dec=32, num_channels_enc=32, num_groups_per_scale=10, num_latent_per_group=20, num_latent_scales=1, num_mixture_dec=10, num_nf=0, num_postprocess_blocks=1, num_postprocess_cells=2, num_preprocess_blocks=1, num_preprocess_cells=2, num_proc_node=1, num_process_per_node=1, num_total_iter=7810, num_x_bits=8, res_dist=True, root='/data/users/fz920/Constrainted-NVAE/checkpoint', save='/data/users/fz920/Constrainted-NVAE/checkpoint/eval-22', seed=1, use_se=True, warmup_epochs=5, weight_decay=0.0003, weight_decay_norm=0.05, weight_decay_norm_anneal=False, weight_decay_norm_init=10.0)
+2022-08-22 21:15:51,436 (Elapsed: 00:00:04) param size = 3.108576M 
+2022-08-22 21:15:51,436 (Elapsed: 00:00:04) groups per scale: [10], total_groups: 10
+2022-08-22 21:15:51,439 (Elapsed: 00:00:04) epoch 0
+2022-08-22 21:16:23,929 (Elapsed: 00:00:37) train 99 18650.082031
+2022-08-22 21:16:55,129 (Elapsed: 00:01:08) train 199 16588.435547
+2022-08-22 21:17:27,007 (Elapsed: 00:01:40) train 299 15316.275391
+2022-08-22 21:17:57,615 (Elapsed: 00:02:11) train 399 14497.438477
+2022-08-22 21:18:28,219 (Elapsed: 00:02:41) train 499 13893.988281
+2022-08-22 21:18:58,739 (Elapsed: 00:03:12) train 599 13440.466797
+2022-08-22 21:19:29,297 (Elapsed: 00:03:42) train 699 13098.129883
+2022-08-22 21:19:54,215 (Elapsed: 00:04:07) train_nelbo 12862.229492
+2022-08-22 21:21:39,936 (Elapsed: 00:05:53) val, step: 156, NELBO: 68408.468750, neg Log p 68134.593750
+2022-08-22 21:21:39,943 (Elapsed: 00:05:53) valid_nelbo 68408.468750
+2022-08-22 21:21:39,943 (Elapsed: 00:05:53) valid neg log p 68134.593750
+2022-08-22 21:21:39,944 (Elapsed: 00:05:53) valid bpd elbo 32.126484
+2022-08-22 21:21:39,944 (Elapsed: 00:05:53) valid bpd log p 31.997866
+2022-08-22 21:21:39,944 (Elapsed: 00:05:53) KL distance 5931.478027
+2022-08-22 21:21:39,947 (Elapsed: 00:05:53) saving the model.
+2022-08-22 21:21:40,073 (Elapsed: 00:05:53) epoch 1
+2022-08-22 21:21:47,222 (Elapsed: 00:06:00) train 799 10527.186523
+2022-08-22 21:22:17,608 (Elapsed: 00:06:31) train 899 10547.789062
+2022-08-22 21:22:48,028 (Elapsed: 00:07:01) train 999 10460.077148
+2022-08-22 21:23:20,900 (Elapsed: 00:07:34) train 1099 10409.596680
+2022-08-22 21:23:51,757 (Elapsed: 00:08:05) train 1199 10317.186523
+2022-08-22 21:24:22,704 (Elapsed: 00:08:36) train 1299 10232.250977
+2022-08-22 21:24:53,737 (Elapsed: 00:09:07) train 1399 10170.700195
+2022-08-22 21:25:24,882 (Elapsed: 00:09:38) train 1499 10111.193359
+2022-08-22 21:25:44,902 (Elapsed: 00:09:58) train_nelbo 10063.886719
+2022-08-22 21:27:29,196 (Elapsed: 00:11:42) val, step: 156, NELBO: 88477.765625, neg Log p 88215.734375
+2022-08-22 21:27:29,200 (Elapsed: 00:11:42) valid_nelbo 88477.765625
+2022-08-22 21:27:29,200 (Elapsed: 00:11:42) valid neg log p 88215.734375
+2022-08-22 21:27:29,200 (Elapsed: 00:11:42) valid bpd elbo 41.551575
+2022-08-22 21:27:29,200 (Elapsed: 00:11:42) valid bpd log p 41.428516
+2022-08-22 21:27:29,200 (Elapsed: 00:11:42) KL distance 8042.998535
+2022-08-22 21:27:29,202 (Elapsed: 00:11:42) saving the model.
+2022-08-22 21:27:29,742 (Elapsed: 00:11:43) epoch 2
+2022-08-22 21:27:42,071 (Elapsed: 00:11:55) train 1599 9283.577148
+2022-08-22 21:28:12,648 (Elapsed: 00:12:26) train 1699 9296.254883
+2022-08-22 21:28:43,023 (Elapsed: 00:12:56) train 1799 9186.052734
+2022-08-22 21:29:13,493 (Elapsed: 00:13:26) train 1899 9107.600586
+2022-08-22 21:29:44,027 (Elapsed: 00:13:57) train 1999 9003.970703
+2022-08-22 21:30:14,703 (Elapsed: 00:14:28) train 2099 8927.811523
+2022-08-22 21:30:45,271 (Elapsed: 00:14:58) train 2199 8885.325195
+2022-08-22 21:31:15,623 (Elapsed: 00:15:29) train 2299 8831.264648
+2022-08-22 21:31:28,634 (Elapsed: 00:15:42) train_nelbo 8808.957031
+2022-08-22 21:33:12,816 (Elapsed: 00:17:26) val, step: 156, NELBO: 104034.781250, neg Log p 103777.875000
+2022-08-22 21:33:12,821 (Elapsed: 00:17:26) valid_nelbo 104034.781250
+2022-08-22 21:33:12,821 (Elapsed: 00:17:26) valid neg log p 103777.875000
+2022-08-22 21:33:12,821 (Elapsed: 00:17:26) valid bpd elbo 48.857574
+2022-08-22 21:33:12,821 (Elapsed: 00:17:26) valid bpd log p 48.736923
+2022-08-22 21:33:12,821 (Elapsed: 00:17:26) KL distance 9568.511719
+2022-08-22 21:33:12,822 (Elapsed: 00:17:26) saving the model.
+2022-08-22 21:33:13,462 (Elapsed: 00:17:26) epoch 3
+2022-08-22 21:33:31,309 (Elapsed: 00:17:44) train 2399 8372.239258
+2022-08-22 21:34:02,703 (Elapsed: 00:18:16) train 2499 8373.895508
+2022-08-22 21:34:34,718 (Elapsed: 00:18:48) train 2599 8261.151367
+2022-08-22 21:35:07,025 (Elapsed: 00:19:20) train 2699 8140.283203
+2022-08-22 21:35:37,810 (Elapsed: 00:19:51) train 2799 8099.995117
+2022-08-22 21:36:08,346 (Elapsed: 00:20:21) train 2899 8012.900391
+2022-08-22 21:36:39,053 (Elapsed: 00:20:52) train 2999 7955.292480
+2022-08-22 21:37:09,525 (Elapsed: 00:21:22) train 3099 7888.278320
+2022-08-22 21:37:16,782 (Elapsed: 00:21:30) train_nelbo 7870.981445
+2022-08-22 21:39:00,338 (Elapsed: 00:23:13) val, step: 156, NELBO: 113889.914062, neg Log p 113631.500000
+2022-08-22 21:39:00,342 (Elapsed: 00:23:13) valid_nelbo 113889.914062
+2022-08-22 21:39:00,372 (Elapsed: 00:23:13) valid neg log p 113631.500000
+2022-08-22 21:39:00,372 (Elapsed: 00:23:13) valid bpd elbo 53.485813
+2022-08-22 21:39:00,372 (Elapsed: 00:23:13) valid bpd log p 53.364452
+2022-08-22 21:39:00,372 (Elapsed: 00:23:13) KL distance 10726.879883
+2022-08-22 21:39:00,374 (Elapsed: 00:23:13) saving the model.
+2022-08-22 21:39:00,760 (Elapsed: 00:23:14) epoch 4
+2022-08-22 21:39:24,789 (Elapsed: 00:23:38) train 3199 7299.852051
+2022-08-22 21:39:55,576 (Elapsed: 00:24:08) train 3299 7179.013672
+2022-08-22 21:40:26,343 (Elapsed: 00:24:39) train 3399 7180.730957
+2022-08-22 21:40:57,064 (Elapsed: 00:25:10) train 3499 7125.912598
+2022-08-22 21:41:27,341 (Elapsed: 00:25:40) train 3599 7080.668945
+2022-08-22 21:41:57,459 (Elapsed: 00:26:10) train 3699 7026.386230
+2022-08-22 21:42:27,936 (Elapsed: 00:26:41) train 3799 6966.080566
+2022-08-22 21:42:58,475 (Elapsed: 00:27:11) train 3899 6916.533203
+2022-08-22 21:43:00,146 (Elapsed: 00:27:13) train_nelbo 6913.358398
+2022-08-22 21:44:44,995 (Elapsed: 00:28:58) val, step: 156, NELBO: 102111.195312, neg Log p 101858.031250
+2022-08-22 21:44:44,999 (Elapsed: 00:28:58) valid_nelbo 102111.195312
+2022-08-22 21:44:44,999 (Elapsed: 00:28:58) valid neg log p 101858.031250
+2022-08-22 21:44:44,999 (Elapsed: 00:28:58) valid bpd elbo 47.954205
+2022-08-22 21:44:44,999 (Elapsed: 00:28:58) valid bpd log p 47.835312
+2022-08-22 21:44:45,000 (Elapsed: 00:28:58) KL distance 9589.546875
+2022-08-22 21:44:45,001 (Elapsed: 00:28:58) saving the model.
+2022-08-22 21:44:45,510 (Elapsed: 00:28:58) epoch 5
+2022-08-22 21:45:15,588 (Elapsed: 00:29:28) train 3999 6435.178711
+2022-08-22 21:45:46,776 (Elapsed: 00:30:00) train 4099 6273.148926
+2022-08-22 21:46:17,838 (Elapsed: 00:30:31) train 4199 6286.869141
+2022-08-22 21:46:49,294 (Elapsed: 00:31:02) train 4299 6285.246094
+2022-08-22 21:47:19,916 (Elapsed: 00:31:33) train 4399 6235.927734
+2022-08-22 21:47:50,503 (Elapsed: 00:32:03) train 4499 6165.980957
+2022-08-22 21:48:21,304 (Elapsed: 00:32:34) train 4599 6117.755859
+2022-08-22 21:48:47,725 (Elapsed: 00:33:01) train_nelbo 6077.200684
+2022-08-22 21:50:31,942 (Elapsed: 00:34:45) val, step: 156, NELBO: 112673.382812, neg Log p 112416.765625
+2022-08-22 21:50:31,946 (Elapsed: 00:34:45) valid_nelbo 112673.382812
+2022-08-22 21:50:31,946 (Elapsed: 00:34:45) valid neg log p 112416.765625
+2022-08-22 21:50:31,947 (Elapsed: 00:34:45) valid bpd elbo 52.914497
+2022-08-22 21:50:31,947 (Elapsed: 00:34:45) valid bpd log p 52.793983
+2022-08-22 21:50:31,947 (Elapsed: 00:34:45) KL distance 10704.895508
+2022-08-22 21:50:31,948 (Elapsed: 00:34:45) saving the model.
+2022-08-22 21:50:32,471 (Elapsed: 00:34:45) epoch 6
+2022-08-22 21:50:37,314 (Elapsed: 00:34:50) train 4699 5318.045410
+2022-08-22 21:51:07,856 (Elapsed: 00:35:21) train 4799 5544.062500
+2022-08-22 21:51:38,340 (Elapsed: 00:35:51) train 4899 5492.400391
+2022-08-22 21:52:09,330 (Elapsed: 00:36:22) train 4999 5432.520996
+2022-08-22 21:52:40,015 (Elapsed: 00:36:53) train 5099 5390.728027
+2022-08-22 21:53:11,005 (Elapsed: 00:37:24) train 5199 5383.895020
+2022-08-22 21:53:41,727 (Elapsed: 00:37:55) train 5299 5364.255859
+2022-08-22 21:54:12,593 (Elapsed: 00:38:25) train 5399 5324.490723
+2022-08-22 21:54:33,392 (Elapsed: 00:38:46) train_nelbo 5305.213867
+2022-08-22 21:56:17,167 (Elapsed: 00:40:30) val, step: 156, NELBO: 125669.242188, neg Log p 125407.437500
+2022-08-22 21:56:17,171 (Elapsed: 00:40:30) valid_nelbo 125669.242188
+2022-08-22 21:56:17,171 (Elapsed: 00:40:30) valid neg log p 125407.437500
+2022-08-22 21:56:17,171 (Elapsed: 00:40:30) valid bpd elbo 59.017708
+2022-08-22 21:56:17,171 (Elapsed: 00:40:30) valid bpd log p 58.894756
+2022-08-22 21:56:17,171 (Elapsed: 00:40:30) KL distance 12000.135742
+2022-08-22 21:56:17,173 (Elapsed: 00:40:30) saving the model.
+2022-08-22 21:56:17,685 (Elapsed: 00:40:31) epoch 7
+2022-08-22 21:56:28,200 (Elapsed: 00:40:41) train 5499 4367.873535
+2022-08-22 21:56:59,369 (Elapsed: 00:41:12) train 5599 4474.394043
+2022-08-22 21:57:30,147 (Elapsed: 00:41:43) train 5699 4386.960938
+2022-08-22 21:58:02,926 (Elapsed: 00:42:16) train 5799 nan
+2022-08-22 21:58:02,926 NaN or Inf found in input tensor.
+2022-08-22 21:58:39,884 (Elapsed: 00:42:53) train 5899 nan
+2022-08-22 21:58:39,884 NaN or Inf found in input tensor.
+2022-08-22 21:59:13,782 (Elapsed: 00:43:27) train 5999 nan
+2022-08-22 21:59:13,784 NaN or Inf found in input tensor.
+2022-08-22 21:59:46,721 (Elapsed: 00:44:00) train 6099 nan
+2022-08-22 21:59:46,721 NaN or Inf found in input tensor.
+2022-08-22 22:00:19,992 (Elapsed: 00:44:33) train 6199 nan
+2022-08-22 22:00:19,992 NaN or Inf found in input tensor.
+2022-08-22 22:00:35,865 (Elapsed: 00:44:49) train_nelbo nan
+2022-08-22 22:00:35,866 NaN or Inf found in input tensor.
+2022-08-22 22:00:35,894 NaN or Inf found in input tensor.
+2022-08-22 22:00:35,920 NaN or Inf found in input tensor.
+2022-08-22 22:00:35,960 NaN or Inf found in input tensor.
+2022-08-22 22:00:36,028 NaN or Inf found in input tensor.
+2022-08-22 22:02:21,680 (Elapsed: 00:46:35) val, step: 156, NELBO: nan, neg Log p nan
+2022-08-22 22:02:21,684 (Elapsed: 00:46:35) valid_nelbo nan
+2022-08-22 22:02:21,684 (Elapsed: 00:46:35) valid neg log p nan
+2022-08-22 22:02:21,684 (Elapsed: 00:46:35) valid bpd elbo nan
+2022-08-22 22:02:21,684 (Elapsed: 00:46:35) valid bpd log p nan
+2022-08-22 22:02:21,684 (Elapsed: 00:46:35) KL distance nan
+2022-08-22 22:02:21,685 NaN or Inf found in input tensor.
+2022-08-22 22:02:21,685 NaN or Inf found in input tensor.
+2022-08-22 22:02:21,686 NaN or Inf found in input tensor.
+2022-08-22 22:02:21,686 NaN or Inf found in input tensor.
+2022-08-22 22:02:21,686 (Elapsed: 00:46:35) saving the model.
+2022-08-22 22:02:22,245 (Elapsed: 00:46:35) epoch 8
+2022-08-22 22:02:39,123 (Elapsed: 00:46:52) train 6299 3452.948486
+2022-08-22 22:03:14,262 (Elapsed: 00:47:27) train 6399 3359.955566
+2022-08-22 22:03:49,400 (Elapsed: 00:48:02) train 6499 3315.809814
+2022-08-22 22:04:22,933 (Elapsed: 00:48:36) train 6599 3279.500488
+2022-08-22 22:04:55,172 (Elapsed: 00:49:08) train 6699 3230.832031
+2022-08-22 22:05:27,324 (Elapsed: 00:49:40) train 6799 nan
+2022-08-22 22:05:27,325 NaN or Inf found in input tensor.
+2022-08-22 22:05:59,745 (Elapsed: 00:50:13) train 6899 nan
+2022-08-22 22:05:59,745 NaN or Inf found in input tensor.
+2022-08-22 22:06:31,954 (Elapsed: 00:50:45) train 6999 nan
+2022-08-22 22:06:31,955 NaN or Inf found in input tensor.
+2022-08-22 22:06:41,603 (Elapsed: 00:50:54) train_nelbo nan
+2022-08-22 22:06:41,604 NaN or Inf found in input tensor.
+2022-08-22 22:06:41,633 NaN or Inf found in input tensor.
+2022-08-22 22:06:41,661 NaN or Inf found in input tensor.
+2022-08-22 22:06:41,706 NaN or Inf found in input tensor.
+2022-08-22 22:06:41,733 NaN or Inf found in input tensor.
+2022-08-22 22:08:26,421 (Elapsed: 00:52:39) val, step: 156, NELBO: nan, neg Log p nan
+2022-08-22 22:08:26,425 (Elapsed: 00:52:39) valid_nelbo nan
+2022-08-22 22:08:26,425 (Elapsed: 00:52:39) valid neg log p nan
+2022-08-22 22:08:26,425 (Elapsed: 00:52:39) valid bpd elbo nan
+2022-08-22 22:08:26,425 (Elapsed: 00:52:39) valid bpd log p nan
+2022-08-22 22:08:26,425 (Elapsed: 00:52:39) KL distance nan
+2022-08-22 22:08:26,425 NaN or Inf found in input tensor.
+2022-08-22 22:08:26,426 NaN or Inf found in input tensor.
+2022-08-22 22:08:26,427 NaN or Inf found in input tensor.
+2022-08-22 22:08:26,427 NaN or Inf found in input tensor.
+2022-08-22 22:08:26,428 (Elapsed: 00:52:39) saving the model.
+2022-08-22 22:08:26,889 (Elapsed: 00:52:40) epoch 9
+2022-08-22 22:08:49,940 (Elapsed: 00:53:03) train 7099 2610.544922
+2022-08-22 22:09:25,042 (Elapsed: 00:53:38) train 7199 2590.122314
+2022-08-22 22:09:57,143 (Elapsed: 00:54:10) train 7299 nan
+2022-08-22 22:09:57,144 NaN or Inf found in input tensor.
+2022-08-22 22:10:30,832 (Elapsed: 00:54:44) train 7399 nan
+2022-08-22 22:10:30,832 NaN or Inf found in input tensor.
+2022-08-22 22:11:04,041 (Elapsed: 00:55:17) train 7499 nan
+2022-08-22 22:11:04,041 NaN or Inf found in input tensor.
+2022-08-22 22:11:37,275 (Elapsed: 00:55:50) train 7599 nan
+2022-08-22 22:11:37,275 NaN or Inf found in input tensor.
+2022-08-22 22:12:10,059 (Elapsed: 00:56:23) train 7699 nan
+2022-08-22 22:12:10,059 NaN or Inf found in input tensor.
+2022-08-22 22:12:42,282 (Elapsed: 00:56:55) train 7799 nan
+2022-08-22 22:12:42,283 NaN or Inf found in input tensor.
+2022-08-22 22:12:45,575 (Elapsed: 00:56:58) train_nelbo nan
+2022-08-22 22:12:45,576 NaN or Inf found in input tensor.
+2022-08-22 22:12:45,603 NaN or Inf found in input tensor.
+2022-08-22 22:12:45,627 NaN or Inf found in input tensor.
+2022-08-22 22:12:45,650 NaN or Inf found in input tensor.
+2022-08-22 22:12:45,673 NaN or Inf found in input tensor.
+2022-08-22 22:14:28,257 (Elapsed: 00:58:41) val, step: 156, NELBO: nan, neg Log p nan
+2022-08-22 22:14:28,261 (Elapsed: 00:58:41) valid_nelbo nan
+2022-08-22 22:14:28,261 (Elapsed: 00:58:41) valid neg log p nan
+2022-08-22 22:14:28,261 (Elapsed: 00:58:41) valid bpd elbo nan
+2022-08-22 22:14:28,261 (Elapsed: 00:58:41) valid bpd log p nan
+2022-08-22 22:14:28,262 (Elapsed: 00:58:41) KL distance nan
+2022-08-22 22:14:28,262 NaN or Inf found in input tensor.
+2022-08-22 22:14:28,262 NaN or Inf found in input tensor.
+2022-08-22 22:14:28,263 NaN or Inf found in input tensor.
+2022-08-22 22:14:28,263 NaN or Inf found in input tensor.
+2022-08-22 22:14:28,263 (Elapsed: 00:58:41) saving the model.
+2022-08-22 22:14:28,771 (Elapsed: 00:58:42) reconstruction loss train 10942.273438
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) reconstruction loss test 10312.105469
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) kl loss train 5619.705078
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) kl loss test 5931.478027
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) reconstruction loss train 9902.055664
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) reconstruction loss test 8905.863281
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) kl loss train 8192.867188
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) kl loss test 8042.998535
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) reconstruction loss train 8074.963379
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) reconstruction loss test 8733.757812
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) kl loss train 9471.401367
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) kl loss test 9568.511719
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) reconstruction loss train 7071.727539
+2022-08-22 22:14:28,772 (Elapsed: 00:58:42) reconstruction loss test 6786.545898
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss train 11033.588867
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss test 10726.879883
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss train 6297.137207
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss test 6786.339844
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss train 9389.590820
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss test 9589.546875
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss train 5843.222656
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss test 5472.399902
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss train 11001.637695
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss test 10704.895508
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss train 4835.239258
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss test 5307.172852
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss train 12174.225586
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss test 12000.135742
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss train 4080.733154
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss test nan
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss train 13660.656250
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss test nan
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss train 2885.847656
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss test nan
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss train 16240.484375
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) kl loss test nan
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss train 2648.738281
+2022-08-22 22:14:28,773 (Elapsed: 00:58:42) reconstruction loss test nan
+2022-08-22 22:14:28,774 (Elapsed: 00:58:42) kl loss train 17388.294922
+2022-08-22 22:14:28,774 (Elapsed: 00:58:42) kl loss test nan
