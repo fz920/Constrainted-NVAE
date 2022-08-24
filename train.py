@@ -153,7 +153,7 @@ def main(args):
             plt.xlabel('epochs')
             plt.ylabel('loss')
             plt.legend()
-            plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-21/reconstuction_loss.pdf', bbox_inches='tight')
+            plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-22/reconstuction_loss.pdf', bbox_inches='tight')
 
             plt.figure(2, figsize=(8, 6), dpi=80)
             xrange1 = [i for i in range(args.epochs)]
@@ -162,7 +162,7 @@ def main(args):
             plt.xlabel('epochs')
             plt.ylabel('loss')
             plt.legend()
-            plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-21/kl_loss.pdf', bbox_inches='tight')
+            plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-22/kl_loss.pdf', bbox_inches='tight')
 
     # Final validation
     valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=1000, args=args, logging=logging)
