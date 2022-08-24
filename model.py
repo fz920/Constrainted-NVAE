@@ -430,6 +430,11 @@ class AutoEncoder(nn.Module):
                     gamma_factor = torch.min(torch.tensor(1).cuda(), torch.div(gamma_bound, gamma_norm))
                     gamma1 = gamma * gamma_factor # Clip gamma
 
+                    # Test whether the clipping algorithm works
+                    l1_gamma1 = torch.mean(torch.sum(torch.abs(gamma1), dim=1))
+                    assert (l2_alpha1 + l1_gamma1) <= 2 * C
+
+
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
 
