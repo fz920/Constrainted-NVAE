@@ -275,7 +275,7 @@ def train(train_queue, model, cnn_optimizer, grad_scalar, global_step, warmup_it
         global_step += 1
 
     utils.average_tensor(nelbo.avg, args.distributed)
-    return nelbo.avg, global_step, kl_vals, recon_loss
+    return nelbo.avg, global_step, balanced_kl, recon_loss
 
 
 def test(valid_queue, model, num_samples, args, logging):
