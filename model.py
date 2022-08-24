@@ -410,10 +410,8 @@ class AutoEncoder(nn.Module):
 
                     l2_alpha = torch.mean(torch.sum(alpha**2, dim=1))   # Compute l2 of alpha
                     l1_gamma = torch.mean(torch.sum(torch.abs(gamma), dim=1)) # Compute l1 of gamma
-                    c_alpha = torch.min(torch.tensor(1).cuda(), torch.sqrt(2*C/l2_alpha))
 
                     alpha_bound = torch.sqrt(2*C/l2_alpha)
-                    gamma_bound = (2*C-c_alpha**2*l2_alpha)/l1_gamma
 
                     # Clip alpha and gamma to a l2 norm ball
                     reduc_ind_alpha = list(range(1, len(alpha.shape)))
@@ -423,6 +421,9 @@ class AutoEncoder(nn.Module):
                     alpha_factor = torch.min(torch.tensor(1).cuda(), torch.div(alpha_bound, alpha_norm))
                     alpha1 = alpha * alpha_factor # Clip alpha
 
+                    l2_alpha1 = torch.mean(torch.sum(alpha1**2, dim=1))
+                    c_alpha = torch.min(torch.tensor(1).cuda(), torch.sqrt(2*C/l2_alpha1))
+                    gamma_bound = (2*C-c_alpha**2*l2_alpha1)/l1_gamma
                     reduc_ind_gamma = list(range(1, len(gamma.shape)))
                     gamma_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(gamma), reduc_ind_gamma, keepdims=True)))
 
