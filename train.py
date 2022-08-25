@@ -165,7 +165,7 @@ def main(args):
             plt.savefig('/data/users/fz920/Constrainted-NVAE/checkpoint/eval-21/kl_loss.pdf', bbox_inches='tight')
 
     # Final validation
-    valid_neg_log_p, valid_nelbo = test(valid_queue, model, num_samples=1000, args=args, logging=logging)
+    valid_neg_log_p, valid_nelbo, _, _= test(valid_queue, model, num_samples=1000, args=args, logging=logging)
     logging.info('final valid nelbo %f', valid_nelbo)
     logging.info('final valid neg log p %f', valid_neg_log_p)
 
