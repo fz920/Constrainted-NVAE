@@ -169,13 +169,6 @@ def main(args):
     logging.info('final valid nelbo %f', valid_nelbo)
     logging.info('final valid neg log p %f', valid_neg_log_p)
 
-    for i in range(args.epochs):
-        logging.info('reconstruction loss train %f', reconstruction_loss_train[i])
-        logging.info('reconstruction loss test %f', reconstruction_loss_test[i])
-        logging.info('kl loss train %f', kl_loss_train[i])
-        logging.info('final valid neg log p %f', kl_loss_test[i])
-
-
     writer.add_scalar('val/neg_log_p', valid_neg_log_p, epoch + 1)
     writer.add_scalar('val/nelbo', valid_nelbo, epoch + 1)
     writer.add_scalar('val/bpd_log_p', valid_neg_log_p * bpd_coeff, epoch + 1)
