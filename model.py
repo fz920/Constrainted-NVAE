@@ -400,7 +400,7 @@ class AutoEncoder(nn.Module):
                     mu_q1, log_sig_q1 = torch.chunk(param, 2, dim=1)
 
                     # Constrained algorithm
-                    C = 10000     #ID=21 C=10000
+                    C = 1000     #ID=21 C=10000
                                   #ID=22 C=1000
 
                     alpha = (mu_q1-mu_p)/torch.exp(log_sig_p)
@@ -431,8 +431,8 @@ class AutoEncoder(nn.Module):
                     gamma1 = gamma * gamma_factor # Clip gamma
 
                     # Test whether the clipping algorithm works
-                    #l1_gamma1 = torch.mean(torch.sum(torch.abs(gamma1), dim=1))
-                    #assert (l2_alpha1 + l1_gamma1) <= 2 * C
+                    l1_gamma1 = torch.mean(torch.sum(torch.abs(gamma1), dim=1))
+                    assert (l2_alpha1 + l1_gamma1) <= 2 * C
 
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
