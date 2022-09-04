@@ -1,5 +1,5 @@
 #!/bin/bash
-export EXPR_ID=24
+export EXPR_ID=23
 export DATA_DIR=/data/users/fz920/data
 export CHECKPOINT_DIR=/data/users/fz920/Constrainted-NVAE/checkpoint
 export CODE_DIR=/data/users/fz920/Constrainted-NVAE
