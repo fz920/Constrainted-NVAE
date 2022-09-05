@@ -400,8 +400,9 @@ class AutoEncoder(nn.Module):
                     mu_q1, log_sig_q1 = torch.chunk(param, 2, dim=1)
 
                     # Constrained algorithm
-                    C = 100     #ID=21 C=100
+                    C = 10     #ID=21 C=100
                                 #ID=22 C=1000
+                                #ID=25 C=10 epoch=20
                                 #ID=23 C=10 (larger model)
                                 #ID=24 C=100 (larger model)
 
