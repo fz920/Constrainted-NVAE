@@ -402,7 +402,7 @@ class AutoEncoder(nn.Module):
                     # Constrained algorithm
                     C = 100     #ID=21 C=100
                                 #ID=22 C=1000
-                                #ID=25 C=100 epoch=20 (the assert fails in this case)
+                                #ID=25 C=100 epoch=20 (the assert fails in this case, training becomes nan)
                                 #ID=23 C=10 (larger model)
                                 #ID=24 C=100 (larger model)
 
