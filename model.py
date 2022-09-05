@@ -435,7 +435,7 @@ class AutoEncoder(nn.Module):
 
                     # Test whether the clipping algorithm works
                     l1_gamma1 = torch.mean(torch.sum(torch.abs(gamma1), dim=1))
-                    assert (l2_alpha1 + l1_gamma1).item() <= 2 * C
+                    #assert (l2_alpha1 + l1_gamma1).item() <= 2 * C
 
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
