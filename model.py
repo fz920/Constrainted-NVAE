@@ -420,7 +420,6 @@ class AutoEncoder(nn.Module):
                     reduc_ind_alpha = list(range(1, len(alpha.shape)))
                     avoid_zero_div = torch.tensor(1e-12).cuda()
                     alpha_norm = torch.sqrt(torch.max(avoid_zero_div, torch.sum(torch.square(alpha), reduc_ind_alpha, keepdims=True)))
-
                     alpha_factor = torch.min(torch.tensor(1).cuda(), torch.div(alpha_bound, alpha_norm))
                     alpha1 = alpha * alpha_factor # Clip alpha
 
@@ -435,7 +434,7 @@ class AutoEncoder(nn.Module):
 
                     # Test whether the clipping algorithm works
                     l1_gamma1 = torch.mean(torch.sum(torch.abs(gamma1), dim=1))
-                    assert (l2_alpha1 + l1_gamma1).item() <= 2 * C
+                    #assert (l2_alpha1 + l1_gamma1).item() <= 2 * C
 
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
