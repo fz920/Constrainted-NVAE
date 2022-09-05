@@ -408,7 +408,7 @@ class AutoEncoder(nn.Module):
                     alpha = (mu_q1-mu_p)/torch.exp(log_sig_p)
                     gamma = 2 * (log_sig_q1-log_sig_p)
 
-                    torch.clamp_(gamma, max=torch.tensor(0).cuda()) # Make sure that gamma is non-positive
+                    torch.clamp_(gamma, max=torch.tensor(-1e-10).cuda()) # Make sure that gamma is non-positive
 
                     l2_alpha = torch.mean(torch.sum(alpha**2, dim=1))   # Compute l2 of alpha
                     l1_gamma = torch.mean(torch.sum(torch.abs(gamma), dim=1)) # Compute l1 of gamma
@@ -434,7 +434,7 @@ class AutoEncoder(nn.Module):
 
                     # Test whether the clipping algorithm works
                     l1_gamma1 = torch.mean(torch.sum(torch.abs(gamma1), dim=1))
-                    assert (l2_alpha1 + l1_gamma1) <= 2 * C
+                    assert (l2_alpha1 + l1_gamma1).item() <= 2 * C
 
                     mu_q = alpha1 + mu_p
                     log_sig_q = log_sig_p + gamma1 / 2
